@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FAARM/HomeController/HomeSliderView.swift"
+            timestampString = "544668151.935833"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "HomeSliderView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FAARM.HomeSliderView.screenWidth.getter : Swift.Optional&lt;CoreGraphics.CGFloat&gt;"
+                  moduleName = "FAARM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/christophervillanueva/Desktop/FAARM/FAARM/HomeController/HomeSliderView.swift"
+                  timestampString = "543968655.788264"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FAARM.HomeSliderView.screenWidth.setter : Swift.Optional&lt;CoreGraphics.CGFloat&gt;"
+                  moduleName = "FAARM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/christophervillanueva/Desktop/FAARM/FAARM/HomeController/HomeSliderView.swift"
+                  timestampString = "543968655.79231"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FAARM.HomeSliderView.init(frame: __C.CGRect) -&gt; FAARM.HomeSliderView"
+                  moduleName = "FAARM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/christophervillanueva/Desktop/FAARM/FAARM/HomeController/HomeSliderView.swift"
+                  timestampString = "543968655.7995369"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FAARM.HomeSliderView.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;FAARM.HomeSliderView&gt;"
+                  moduleName = "FAARM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/christophervillanueva/Desktop/FAARM/FAARM/HomeController/HomeSliderView.swift"
+                  timestampString = "543968655.801944"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "57">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FAARM/ContactController/ContactController.swift"
+            timestampString = "547540785.7831579"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "handleCall()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FAARM/ContactController/ContactController.swift"
+            timestampString = "547540785.7832381"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "handleCall()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
