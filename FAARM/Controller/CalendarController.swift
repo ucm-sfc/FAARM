@@ -40,7 +40,7 @@ class CalendarController: UIViewController, UITableViewDelegate, UITableViewData
     }()
     
     let cellId = "cellId"
-    let calendarUrl = "https://www.googleapis.com/calendar/v3/calendars/nhuizar3@gmail.com/events?key=AIzaSyAIhwddROqkHVggMRyX_XLG4H5TqlC65Zs"
+    let calendarUrl = "https://www.googleapis.com/calendar/v3/calendars/sfcucmmobile@gmail.com/events?key=AIzaSyBy9-ozSJ3CTsLW5m4Uw6X4wScHr8pePK0"
     
     // This is the tool that helps us parse and
     // make sense of the dates we get from

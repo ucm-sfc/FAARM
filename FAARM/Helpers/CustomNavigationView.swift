@@ -11,7 +11,7 @@ import UIKit
 class CustomNavigationView: UIView {
 
     let logoImageView: UIImageView = {
-        let imageView = UIImageView(image: #imageLiteral(resourceName: "navBarImage") )
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "SFC-NAV-LOGO") )
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
@@ -22,13 +22,13 @@ class CustomNavigationView: UIView {
         logoImageView.anchor(top: topAnchor, paddingTop: 0, left: leftAnchor, paddingLeft: 0, bottom: bottomAnchor, paddingBotton: 0, right: rightAnchor, paddingRight: 0, width: 0, height: 0)
     }
     
-    func anchorNavBar(view: UIView){
-        let navBarHeight = view.frame.width * 0.22
+    func anchorNavBar(view: UIView){ //originally .22
+        let navBarHeight = view.frame.width * 0.27
         self.anchor(top: view.safeAreaLayoutGuide.topAnchor, paddingTop: 0, left: view.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: -1, width: 0, height: navBarHeight)
     }
     
     func anchorMiniNavBar(view: UIView){
-        let miniNavBarheight = view.frame.width * 0.145
+        let miniNavBarheight = view.frame.width * 0.145 //0.145
         self.anchor(top: view.safeAreaLayoutGuide.topAnchor, paddingTop: 0, left: view.safeAreaLayoutGuide.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.safeAreaLayoutGuide.rightAnchor, paddingRight: 0, width: 0, height: miniNavBarheight)
     }
     

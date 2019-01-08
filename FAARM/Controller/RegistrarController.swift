@@ -43,9 +43,8 @@ class RegistrarController: UICollectionViewController {
     }
     
     @objc func handleTutorialsButton() {
-        let comingSoonAlert = UIAlertController(title: "Coming Soon", message: "This feature will be implemented at a later date", preferredStyle: .alert)
-        comingSoonAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(comingSoonAlert, animated: true, completion: nil)
+        let svc = SFSafariViewController(url: NSURL(string: "https://youtu.be/8NTTXuPHj5A")! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
     
     @objc func handleWebsiteButton() {

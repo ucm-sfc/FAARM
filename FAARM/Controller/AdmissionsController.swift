@@ -36,9 +36,8 @@ class AdmissionsController: UICollectionViewController {
         
         @objc func handleMajorsTab() {
             
-            let comingSoonAlert = UIAlertController(title: "Coming Soon", message: "This feature will be implemented at a later date", preferredStyle: .alert)
-            comingSoonAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(comingSoonAlert, animated: true, completion: nil)
+            let svc = SFSafariViewController(url: NSURL(string: "https://admissions.ucmerced.edu/academics/majors-minors")! as URL)
+            self.present(svc, animated: true, completion: nil)
             
         }
     

@@ -36,9 +36,9 @@ class FinAidController: UICollectionViewController {
     }
     
     @objc func handleDirectCostWorksheet() {
-        let comingSoonAlert = UIAlertController(title: "Coming Soon", message: "This feature will be implemented at a later date", preferredStyle: .alert)
-        comingSoonAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(comingSoonAlert, animated: true, completion: nil)
+        let svc = SFSafariViewController(url: NSURL(string: "https://finaidapps.ucmerced.edu/DirectCostWorksheet/index.cfm")! as URL)
+        self.present(svc, animated: true, completion: nil)
+        
     }
     
     
@@ -48,9 +48,9 @@ class FinAidController: UICollectionViewController {
     
     
     @objc func handleFinAidForms() {
-        let comingSoonAlert = UIAlertController(title: "Coming Soon", message: "This feature will be implemented at a later date", preferredStyle: .alert)
-        comingSoonAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(comingSoonAlert, animated: true, completion: nil)
+        
+        let svc = SFSafariViewController(url: NSURL(string: "http://financialaid.ucmerced.edu/forms/2018-2019")! as URL)
+        self.present(svc, animated: true, completion: nil)
 //
 //        let finAidFormController = FinAidFormController()
 //        present(finAidFormController, animated: true, completion: nil)

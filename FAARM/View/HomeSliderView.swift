@@ -11,7 +11,7 @@ import UIKit
 class HomeSliderView: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
   
     private let cellId = "cellId"
-    let sliderImages = [#imageLiteral(resourceName: "SFC DS-1"), #imageLiteral(resourceName: "sample")]
+    let sliderImages = [#imageLiteral(resourceName: "SFC-Hours-App"),#imageLiteral(resourceName: "SFC DS-1")]
     
     // We use this to know how big the screen is
     var screenWidth: CGFloat?
@@ -28,8 +28,18 @@ class HomeSliderView: UIView, UICollectionViewDataSource, UICollectionViewDelega
         layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.isPagingEnabled = true
+
         return cv
     }()
+    
+    @objc func handleZoomTap(){
+        print("123")
+    }
+//    func performZoomInForStartingImageView(startingImageView: UIImageView){
+//        print("Performing zoom in logic in controller")
+//
+//    }
+    
     
     // This function will set up the the way our slider will look
     // It needs to be called manually from wherever u create
@@ -60,6 +70,13 @@ class HomeSliderView: UIView, UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! HomeSliderCell
         cell.flyerImageView.image = sliderImages[indexPath.item]
+        
+        cell.isUserInteractionEnabled = true
+        
+        cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleZoomTap)))
+        
+        
+        
         return cell
     }
     
