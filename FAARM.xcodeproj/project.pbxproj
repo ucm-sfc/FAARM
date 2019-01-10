@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1A17767F217E54A000483467 /* HomeHeaderCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17767E217E54A000483467 /* HomeHeaderCell2.swift */; };
+		1A6A225E21E66C5800C0A64B /* RegistrarResourcesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A225D21E66C5800C0A64B /* RegistrarResourcesController.swift */; };
+		1A6A226021E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A225F21E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift */; };
+		1A6A226221E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A226121E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift */; };
 		1AAA3193217FCE6600B74D2F /* MSAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5655CB8120798540000599E5 /* MSAL.framework */; };
 		1AAA3194217FCE6600B74D2F /* MSAL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5655CB8120798540000599E5 /* MSAL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5640ED022087384800BE1FB1 /* CalendarController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5640ED012087384800BE1FB1 /* CalendarController+TableView.swift */; };
@@ -81,6 +84,9 @@
 
 /* Begin PBXFileReference section */
 		1A17767E217E54A000483467 /* HomeHeaderCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderCell2.swift; sourceTree = "<group>"; };
+		1A6A225D21E66C5800C0A64B /* RegistrarResourcesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarResourcesController.swift; sourceTree = "<group>"; };
+		1A6A225F21E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarResourcesControllerSetup.swift; sourceTree = "<group>"; };
+		1A6A226121E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarResourcesControllerHelper.swift; sourceTree = "<group>"; };
 		36A6B0F7ADB10BC1F6E988DB /* Pods_FAARM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FAARM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5638D1972093E0C5008D0757 /* FAARM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FAARM.entitlements; sourceTree = "<group>"; };
 		5640ED012087384800BE1FB1 /* CalendarController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalendarController+TableView.swift"; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 		5685CDFB20A2D0CB00E4FCD1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				1A6A226121E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift */,
 				569C30E3206DB59B00C1A19D /* ContactControllerHelpers.swift */,
 				56AE5837208FB9B0002F3C51 /* AdmissionsControllerHelper.swift */,
 				56AE584B20907D31002F3C51 /* CoreDataManager.swift */,
@@ -225,6 +232,8 @@
 				5685CDF720A2C19100E4FCD1 /* RegisterController.swift */,
 				5685CE1520A3F86700E4FCD1 /* RegisterController+Handlers.swift */,
 				5685CE1320A3F85300E4FCD1 /* RegisterController+SetupUI.swift */,
+				1A6A225D21E66C5800C0A64B /* RegistrarResourcesController.swift */,
+				1A6A225F21E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -438,6 +447,7 @@
 				5640ED022087384800BE1FB1 /* CalendarController+TableView.swift in Sources */,
 				56AE584E209162BF002F3C51 /* NotificationsDeleteController.swift in Sources */,
 				564F557D20853BC00060E974 /* CalendarController+getJSON.swift in Sources */,
+				1A6A226021E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift in Sources */,
 				56AE5838208FB9B0002F3C51 /* AdmissionsController.swift in Sources */,
 				5685CDF820A2C19100E4FCD1 /* RegisterController.swift in Sources */,
 				5685CE0620A3F60800E4FCD1 /* CalendarAddController+Handlers.swift in Sources */,
@@ -458,6 +468,7 @@
 				5685CE0920A3F66D00E4FCD1 /* NotificationsController+SetupUI.swift in Sources */,
 				569C30E6206DB7FF00C1A19D /* ContactController+SetupUI.swift in Sources */,
 				56AE5827208F1FF1002F3C51 /* NotificationsController.swift in Sources */,
+				1A6A225E21E66C5800C0A64B /* RegistrarResourcesController.swift in Sources */,
 				569C30DB2061724500C1A19D /* HomeController+BuildCollectionView.swift in Sources */,
 				56AE583A208FB9B0002F3C51 /* AdmissionsControllerHelper.swift in Sources */,
 				569C30D82061639F00C1A19D /* CustomNavigationView.swift in Sources */,
@@ -473,6 +484,7 @@
 				5685CE0E20A3F74E00E4FCD1 /* NotificationsDeleteController+SetupUI.swift in Sources */,
 				564F557F208598ED0060E974 /* MessageController.swift in Sources */,
 				569C30D02059F79B00C1A19D /* Extensions.swift in Sources */,
+				1A6A226221E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift in Sources */,
 				569C30E8206E017800C1A19D /* HomeController+Handlers.swift in Sources */,
 				5685CE1620A3F86700E4FCD1 /* RegisterController+Handlers.swift in Sources */,
 				5685CDFA20A2C1A300E4FCD1 /* LoginController.swift in Sources */,
@@ -623,7 +635,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = FAARM/FAARM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = QHY57GL3DG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -646,7 +658,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = FAARM/FAARM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = QHY57GL3DG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

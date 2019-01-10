@@ -24,10 +24,10 @@ extension AdmissionsController {
         
         //add majors button to the screen
         view.addSubview(majorsButton)
-        majorsButton.anchor(top: view.topAnchor, paddingTop: 120, left: view.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 80, width: 0, height: 50)
+        majorsButton.anchor(top: view.topAnchor, paddingTop: 120, left: view.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 80, width: 0, height: 60)
         
         view.addSubview(websiteButton)
-        websiteButton.anchor(top: view.topAnchor, paddingTop: 190, left: view.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 50, width: 0, height: 50)
+        websiteButton.anchor(top: view.topAnchor, paddingTop: 200, left: view.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 60, width: 0, height: 60)
         
         view.addSubview(backButton)
         backButton.anchor(top: websiteButton.bottomAnchor, paddingTop: 30, left: view.leftAnchor, paddingLeft: 30, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 30, width: 0, height: 40)

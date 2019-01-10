@@ -26,19 +26,19 @@ extension FinAidController {
         
         //add buttons to the screen
         view.addSubview(directCostWorksheetButton)
-        directCostWorksheetButton.anchor(top: view.topAnchor, paddingTop: 120, left: view.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 30, width: 0, height: 50)
+        directCostWorksheetButton.anchor(top: view.topAnchor, paddingTop: 120, left: view.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 50, width: 0, height: 60)
         
         view.addSubview(finAidFormsButton)
-        finAidFormsButton.anchor(top: view.topAnchor, paddingTop: 190, left: view.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 100, width: 0, height: 50)
+        finAidFormsButton.anchor(top: view.topAnchor, paddingTop: 200, left: view.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 90, width: 0, height: 60)
         
         view.addSubview(finWebsiteButton)
-        finWebsiteButton.anchor(top: view.topAnchor, paddingTop: 260, left: view.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 190, width: 0, height: 50)
+        finWebsiteButton.anchor(top: view.topAnchor, paddingTop: 280, left: view.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 180, width: 0, height: 60)
         
         view.addSubview(backButton)
-        backButton.anchor(top: finWebsiteButton.bottomAnchor, paddingTop: 30, left: view.leftAnchor, paddingLeft: 30, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 30, width: 0, height: 40)
+        backButton.anchor(top: finWebsiteButton.bottomAnchor, paddingTop: 30, left: view.leftAnchor, paddingLeft: 30, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 25, width: 0, height: 40)
         
         
-        //each of the tabs are separated by 70 pix
+        //each of the tabs are separated by 80 pix
         
     }
     

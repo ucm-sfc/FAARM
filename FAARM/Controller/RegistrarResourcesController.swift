@@ -1,15 +1,15 @@
 //
-//  RegistrarController.swift
+//  RegistrarResourcesController.swift
 //  FAARM
 //
-//  Created by Christopher Villanueva on 3/30/18.
-//  Copyright © 2018 Christopher Villanueva. All rights reserved.
+//  Created by Nathan Huizar on 1/9/19.
+//  Copyright © 2019 Christopher Villanueva. All rights reserved.
 //
 
 import UIKit
 import SafariServices
 
-class RegistrarController: UICollectionViewController {
+class RegistrarResourcesController: UICollectionViewController {
     
     let UniversityImageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "UniversityBackground"))
@@ -34,23 +34,29 @@ class RegistrarController: UICollectionViewController {
         
     }
     
-    @objc func handleResourceButton() {
+    @objc func handleTranscriptButton() {
         
-        let layout = UICollectionViewFlowLayout()
-        let registrarResourcesController = RegistrarResourcesController(collectionViewLayout: layout)
-        present(registrarResourcesController, animated: true, completion: nil)
-       
+        let svc = SFSafariViewController(url: NSURL(string: "https://registrar.ucmerced.edu/services/transcripts")! as URL)
+        self.present(svc, animated: true, completion: nil)
+        
         
     }
     
-    @objc func handleTutorialsButton() {
-        let svc = SFSafariViewController(url: NSURL(string: "https://www.youtube.com/watch?v=8NTTXuPHj5A&list=PL_V0P1jtk44v04RTUEd_BepJwFJ-kyho1")! as URL)
+    @objc func handleGPACalculatorButton() {
+        let svc = SFSafariViewController(url: NSURL(string: "https://registrar.ucmerced.edu/policies/grades/gpa-calculator")! as URL)
         self.present(svc, animated: true, completion: nil)
     }
     
-    @objc func handleWebsiteButton() {
+    @objc func handleCourseScheduleButton() {
         
-        let svc = SFSafariViewController(url: NSURL(string: "http://registrar.ucmerced.edu/")! as URL)
+        let svc = SFSafariViewController(url: NSURL(string: "https://mystudentrecord.ucmerced.edu/pls/PROD/xhwschedule.p_selectsubject")! as URL)
+        self.present(svc, animated: true, completion: nil)
+        
+    }
+    
+    @objc func handleAcademicCalendarButton() {
+        
+        let svc = SFSafariViewController(url: NSURL(string: "https://registrar.ucmerced.edu/schedules/calendars")! as URL)
         self.present(svc, animated: true, completion: nil)
         
     }
@@ -61,4 +67,5 @@ class RegistrarController: UICollectionViewController {
     
     
 }
+
 

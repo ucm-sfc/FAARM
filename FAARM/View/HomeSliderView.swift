@@ -11,7 +11,7 @@ import UIKit
 class HomeSliderView: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
   
     private let cellId = "cellId"
-    let sliderImages = [#imageLiteral(resourceName: "SFC-Hours-App"),#imageLiteral(resourceName: "SFC DS-1")]
+    let sliderImages = [#imageLiteral(resourceName: "SFC Hours for Nate's App-2"),#imageLiteral(resourceName: "App-highlights"),#imageLiteral(resourceName: "Web-checkIn"),#imageLiteral(resourceName: "SFC DS-1")]
     
     // We use this to know how big the screen is
     var screenWidth: CGFloat?
