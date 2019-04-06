@@ -42,13 +42,16 @@ extension HomeController {
     
     func handleNotifications() {
         
-        if Auth.auth().currentUser == nil {
-            let loginController = LoginController()
-            present(loginController, animated: true, completion: nil)
-        } else {
-            let notificationsController = NotificationsController()
-            present(notificationsController, animated: true, completion: nil)
-        }
+        let maps = SFSafariViewController(url: NSURL(string: "https://www.ucmerced.edu/maps")! as URL)
+        self.present(maps, animated: true, completion: nil)
+        
+//        if Auth.auth().currentUser == nil {
+//            let loginController = LoginController()
+//            present(loginController, animated: true, completion: nil)
+//        } else {
+//            let notificationsController = NotificationsController()
+//            present(notificationsController, animated: true, completion: nil)
+//        }
        
     }
     

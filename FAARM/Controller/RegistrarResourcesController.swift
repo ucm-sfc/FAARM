@@ -25,27 +25,11 @@ class RegistrarResourcesController: UICollectionViewController {
         guard let collectionView = collectionView else { return }
         collectionView.backgroundColor = .ucmBlue
         
-        let customNavigationBar = CustomNavigationView()
-        customNavigationBar.logoImageView.image = #imageLiteral(resourceName: "Registrar Title-1")
-        collectionView.addSubview(customNavigationBar)
-        customNavigationBar.anchorMiniNavBar(view: view)
         
         setupUI()
         
     }
     
-    @objc func handleTranscriptButton() {
-        
-        let svc = SFSafariViewController(url: NSURL(string: "https://registrar.ucmerced.edu/services/transcripts")! as URL)
-        self.present(svc, animated: true, completion: nil)
-        
-        
-    }
-    
-    @objc func handleGPACalculatorButton() {
-        let svc = SFSafariViewController(url: NSURL(string: "https://registrar.ucmerced.edu/policies/grades/gpa-calculator")! as URL)
-        self.present(svc, animated: true, completion: nil)
-    }
     
     @objc func handleCourseScheduleButton() {
         

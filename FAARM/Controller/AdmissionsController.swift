@@ -25,41 +25,31 @@ class AdmissionsController: UICollectionViewController {
         guard let collectionView = collectionView else { return }
         collectionView.backgroundColor = .ucmBlue
         
-        let customNavigationBar = CustomNavigationView()
-        customNavigationBar.logoImageView.image = #imageLiteral(resourceName: "AdmissionsTitle")
-        collectionView.addSubview(customNavigationBar)
-        customNavigationBar.anchorMiniNavBar(view: view)
         
         setupUI()
         
     }
         
-        @objc func handleMajorsTab() {
-            
-            let svc = SFSafariViewController(url: NSURL(string: "https://admissions.ucmerced.edu/academics/majors-minors")! as URL)
-            self.present(svc, animated: true, completion: nil)
-            
-        }
+    @objc func handleFATV() {
+    
+        let layout = UICollectionViewFlowLayout()
+        let fatvController = FATVController(collectionViewLayout: layout)
+        present(fatvController, animated: true, completion: nil)
+    
+    }
+    
+    @objc func handleHowTo() {
+        
+        let svc = SFSafariViewController(url: NSURL(string: "https://www.youtube.com/watch?v=8NTTXuPHj5A&list=PL_V0P1jtk44v04RTUEd_BepJwFJ-kyho1")! as URL)
+        self.present(svc, animated: true, completion: nil)
+        
+    }
+    
     
         @objc func handleDismiss(){
             dismiss(animated: true, completion: nil)
-        }
-        
-        
-        @objc func handleWebsite() {
-        
-            //open the application in the brower
-//            UIApplication.shared.open(URL(string : "http://admissions.ucmerced.edu/")!, options: [:], completionHandler: { (status) in
-//
-//            })
-
-            //open the link in app while having all the advantages of safari
-            let svc = SFSafariViewController(url: NSURL(string: "http://admissions.ucmerced.edu/")! as URL)
-            self.present(svc, animated: true, completion: nil)
-            
-        
-    
     }
+    
     
     
 }

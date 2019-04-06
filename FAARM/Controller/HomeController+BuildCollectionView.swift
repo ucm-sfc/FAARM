@@ -13,7 +13,7 @@ extension HomeController {
     // Initialize and Register Collection View
     func setupCollectionView() {
         collectionView?.backgroundColor = .ucmBlue
-        collectionView?.register(HomeHeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
+        collectionView?.register(HomeHeaderCell.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
         collectionView?.register(HomeBodyCell.self, forCellWithReuseIdentifier: bodyId)
     }
     

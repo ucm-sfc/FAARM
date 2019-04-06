@@ -18,7 +18,7 @@ class MessageController: UICollectionViewController, UICollectionViewDelegateFlo
         super.viewDidLoad()
         
         collectionView?.backgroundColor = .ucmBlue
-        collectionView?.register(MessageView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
+        collectionView?.register(MessageView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
         collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
         
     }

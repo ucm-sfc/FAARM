@@ -11,21 +11,6 @@ import UIKit
 
 extension RegistrarResourcesController {
     
-    @objc func createTranscriptButton(image: UIImage, handler: Selector ) -> UIButton {
-        let button = UIButton()
-        button.setImage(image, for: .normal)
-        button.addTarget(self, action: handler, for: .touchUpInside)
-        button.contentMode = .scaleAspectFit
-        return button
-    }
-    
-    @objc func createGPACalculatorButton(image: UIImage, handler: Selector ) -> UIButton {
-        let button = UIButton()
-        button.setImage(image, for: .normal)
-        button.addTarget(self, action: handler, for: .touchUpInside)
-        button.contentMode = .scaleAspectFit
-        return button
-    }
     
     @objc func createCourseScheduleButton(image: UIImage, handler: Selector ) -> UIButton {
         let button = UIButton()

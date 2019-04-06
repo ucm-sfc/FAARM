@@ -25,7 +25,7 @@ class UserInputView: UIView {
         textField.backgroundColor = .white
         textField.tintColor = .black
         textField.textColor = .black
-        let attributedPlaceholder: NSAttributedString = NSMutableAttributedString(string: "", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
+        let attributedPlaceholder: NSAttributedString = NSMutableAttributedString(string: "", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         textField.attributedPlaceholder = attributedPlaceholder
         textField.borderStyle = .roundedRect
         textField.font = UIFont.systemFont(ofSize: 14)
@@ -35,7 +35,7 @@ class UserInputView: UIView {
     
     func setTitles(title: String){
         inputLabel.text = title
-        inputTextField.attributedPlaceholder = NSMutableAttributedString(string: title, attributes: [NSAttributedStringKey.foregroundColor: UIColor.black])
+        inputTextField.attributedPlaceholder = NSMutableAttributedString(string: title, attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
     }
     
     override init(frame: CGRect) {

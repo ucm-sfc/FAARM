@@ -13,24 +13,29 @@ extension AdmissionsController {
 
     func setupUI() {
         
+        let customNavigationBar = CustomNavigationView()
+        customNavigationBar.logoImageView.image = #imageLiteral(resourceName: "TutorialTitle.png")
+        collectionView.addSubview(customNavigationBar)
+        customNavigationBar.anchorMiniNavBar(view: view)
+        
         //adds the university image to the pages 
         view.addSubview(UniversityImageView)
-        UniversityImageView.anchor(top: nil, paddingTop: 0, left: view.leftAnchor, paddingLeft: 0, bottom: view.bottomAnchor, paddingBotton: 80, right: view.rightAnchor, paddingRight: 0, width: view.frame.width, height: 80)
+        UniversityImageView.anchor(top: nil, paddingTop: 0, left: view.leftAnchor, paddingLeft: 0, bottom: view.bottomAnchor, paddingBotton: 70, right: view.rightAnchor, paddingRight: 0, width: view.frame.width, height: 80)
         
-        let majorsButton = createAdmissionsButton(image: #imageLiteral(resourceName: "Admissions-Majors Tab"), handler: #selector(handleMajorsTab))
-        let websiteButton = createAdmissionsButton(image: #imageLiteral(resourceName: "AdmissionsWebsitetab"), handler: #selector(handleWebsite))
+        let FATVButton = createFATVButton(image: #imageLiteral(resourceName: "FATVsmall.png"), handler: #selector(handleFATV))
+        let howToButton = createHowToButton(image: #imageLiteral(resourceName: "howTo.png"), handler: #selector(handleHowTo))
         let backButton = createBackButton(image: #imageLiteral(resourceName: "Back Button White"), handler: #selector(handleDismiss))
         
         
         //add majors button to the screen
-        view.addSubview(majorsButton)
-        majorsButton.anchor(top: view.topAnchor, paddingTop: 120, left: view.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 80, width: 0, height: 60)
+        view.addSubview(FATVButton)
+        FATVButton.anchor(top: customNavigationBar.bottomAnchor, paddingTop: 30, left: view.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 270, width: 0, height: 60)
         
-        view.addSubview(websiteButton)
-        websiteButton.anchor(top: view.topAnchor, paddingTop: 200, left: view.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 60, width: 0, height: 60)
+        view.addSubview(howToButton)
+        howToButton.anchor(top: FATVButton.bottomAnchor, paddingTop: 20, left: view.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 100, width: 0, height: 60)
         
         view.addSubview(backButton)
-        backButton.anchor(top: websiteButton.bottomAnchor, paddingTop: 30, left: view.leftAnchor, paddingLeft: 30, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 30, width: 0, height: 40)
+        backButton.anchor(top: howToButton.bottomAnchor, paddingTop: 30, left: view.leftAnchor, paddingLeft: 30, bottom: nil, paddingBotton: 0, right: view.rightAnchor, paddingRight: 30, width: 0, height: 40)
         
     }
 

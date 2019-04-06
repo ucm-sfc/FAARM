@@ -23,7 +23,7 @@ class RegisterController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         let textField = UITextField()
         textField.backgroundColor = .white
         textField.textColor = .black
-        let attributedPlaceholder: NSAttributedString = NSMutableAttributedString(string: "Email", attributes: [NSAttributedStringKey.foregroundColor: UIColor.lightGray])
+        let attributedPlaceholder: NSAttributedString = NSMutableAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         textField.attributedPlaceholder = attributedPlaceholder
         textField.borderStyle = .roundedRect
         textField.font = UIFont.systemFont(ofSize: 14)
@@ -37,7 +37,7 @@ class RegisterController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         let textField = UITextField()
         textField.backgroundColor = .white
         textField.textColor = .black
-        let attributedPlaceholder: NSAttributedString = NSMutableAttributedString(string: "Username", attributes: [NSAttributedStringKey.foregroundColor: UIColor.lightGray])
+        let attributedPlaceholder: NSAttributedString = NSMutableAttributedString(string: "Username", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         textField.attributedPlaceholder = attributedPlaceholder
         textField.borderStyle = .roundedRect
         textField.font = UIFont.systemFont(ofSize: 14)
@@ -49,7 +49,7 @@ class RegisterController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         let textField = UITextField()
         textField.backgroundColor = .white
         textField.textColor = .black
-        let attributedPlaceholder: NSAttributedString = NSMutableAttributedString(string: "Password", attributes: [NSAttributedStringKey.foregroundColor: UIColor.lightGray])
+        let attributedPlaceholder: NSAttributedString = NSMutableAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         textField.attributedPlaceholder = attributedPlaceholder
         textField.isSecureTextEntry = true
         textField.borderStyle = .roundedRect
@@ -80,8 +80,8 @@ class RegisterController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     let alreadyHaveAccountButton: UIButton = {
         let button = UIButton(type: .system)
-        let attributedTitle = NSMutableAttributedString(string: "Already have an account? ", attributes: [NSAttributedStringKey.font : UIFont.systemFont(ofSize: 14), NSAttributedStringKey.foregroundColor: UIColor.lightGray])
-        attributedTitle.append(NSAttributedString(string: "Sign In", attributes: [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 14), NSAttributedStringKey.foregroundColor: UIColor.ucmGold]))
+        let attributedTitle = NSMutableAttributedString(string: "Already have an account? ", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        attributedTitle.append(NSAttributedString(string: "Sign In", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.ucmGold]))
         button.setAttributedTitle(attributedTitle, for: .normal)
         button.addTarget(self, action: #selector(handleShowLogin), for: .touchUpInside)
         return button
@@ -100,7 +100,7 @@ class RegisterController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         let textField = UITextField()
         textField.backgroundColor = .white
         textField.textColor = .black
-        let attributedPlaceholder: NSAttributedString = NSMutableAttributedString(string: "I am a...", attributes: [NSAttributedStringKey.foregroundColor: UIColor.lightGray])
+        let attributedPlaceholder: NSAttributedString = NSMutableAttributedString(string: "I am a...", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         textField.attributedPlaceholder = attributedPlaceholder
         textField.borderStyle = .roundedRect
         textField.font = UIFont.systemFont(ofSize: 14)

@@ -28,17 +28,10 @@ class HomeSliderView: UIView, UICollectionViewDataSource, UICollectionViewDelega
         layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.isPagingEnabled = true
+        cv.indicatorStyle = UIScrollView.IndicatorStyle.white
 
         return cv
     }()
-    
-    @objc func handleZoomTap(){
-        print("123")
-    }
-//    func performZoomInForStartingImageView(startingImageView: UIImageView){
-//        print("Performing zoom in logic in controller")
-//
-//    }
     
     
     // This function will set up the the way our slider will look
@@ -71,14 +64,12 @@ class HomeSliderView: UIView, UICollectionViewDataSource, UICollectionViewDelega
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! HomeSliderCell
         cell.flyerImageView.image = sliderImages[indexPath.item]
         
-        cell.isUserInteractionEnabled = true
-        
-        cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleZoomTap)))
-        
-        
+//        cell.isUserInteractionEnabled = true
+//        cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openUpSliders)))
         
         return cell
     }
+
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: imageSliderView.frame.width, height: imageSliderView.frame.height)
@@ -117,8 +108,10 @@ class HomeSliderCell: UICollectionViewCell {
         imageView.contentMode = .scaleAspectFill
         imageView.layer.masksToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        
         return imageView
     }()
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -128,6 +121,14 @@ class HomeSliderCell: UICollectionViewCell {
         
         addSubview(flyerImageView)
         flyerImageView.anchor(top: topAnchor, paddingTop: 10, left: leftAnchor, paddingLeft: 10, bottom: bottomAnchor, paddingBotton: 10, right: rightAnchor, paddingRight: 10, width: 0, height: 0)
+        flyerImageView.isUserInteractionEnabled = true
+        flyerImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openUpSliders)))
+    }
+    
+    @objc func openUpSliders(){
+        print(123)
+//        let openSliders = UICollectionViewController()
+//        self.present(openSliders, animated: true, completion: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {

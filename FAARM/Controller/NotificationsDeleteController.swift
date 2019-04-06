@@ -73,8 +73,8 @@ class NotificationsDeleteController: UIViewController {
         didSet {
             //titleLabel.text = calendarEvent?.name
             if let dayName = savedCalendarEvent?.dayName, let monthAbbrev = savedCalendarEvent?.monthAbbrev, let dayNumber = savedCalendarEvent?.dayNumber{
-                let attributedText = NSMutableAttributedString(string: "Date : ", attributes: [NSAttributedStringKey.font : UIFont.systemFont(ofSize: 22), NSAttributedStringKey.foregroundColor: UIColor.white])
-                attributedText.append(NSAttributedString(string: "\(dayName), \(monthAbbrev) \(dayNumber)", attributes: [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 22), NSAttributedStringKey.foregroundColor: UIColor.white]))
+                let attributedText = NSMutableAttributedString(string: "Date : ", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22), NSAttributedString.Key.foregroundColor: UIColor.white])
+                attributedText.append(NSAttributedString(string: "\(dayName), \(monthAbbrev) \(dayNumber)", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 22), NSAttributedString.Key.foregroundColor: UIColor.white]))
                 dateLabel.attributedText = attributedText
              //   self.monthAbbrev = monthAbbrev
              //   self.dayNumber = dayNumber

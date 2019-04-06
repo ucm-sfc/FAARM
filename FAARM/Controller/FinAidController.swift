@@ -24,11 +24,6 @@ class FinAidController: UICollectionViewController {
         guard let collectionView = collectionView else { return }
         collectionView.backgroundColor = .ucmBlue
         
-        let customNavigationBar = CustomNavigationView()
-        customNavigationBar.logoImageView.contentMode = .scaleAspectFit
-        customNavigationBar.logoImageView.image = #imageLiteral(resourceName: "FinAidTitle")
-        collectionView.addSubview(customNavigationBar)
-        customNavigationBar.anchorMiniNavBar(view: view)
         
         
         setupUI()
@@ -41,6 +36,29 @@ class FinAidController: UICollectionViewController {
         
     }
     
+    @objc func handleTF() {
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        let tfController = TFController(collectionViewLayout: layout)
+        present(tfController, animated: true, completion: nil)
+        
+    }
+    
+    @objc func handleCOA() {
+        
+        let svc = SFSafariViewController(url: NSURL(string: "http://financialaid.ucmerced.edu/cost-attendance")! as URL)
+        self.present(svc, animated: true, completion: nil)
+        
+    }
+    
+    @objc func handleDPP() {
+        
+        let svc = SFSafariViewController(url: NSURL(string: "https://bfs.ucmerced.edu/deptstaff-directory/financial-accounting-services/student-business-services/deferred-payment-plan")! as URL)
+        self.present(svc, animated: true, completion: nil)
+        
+    }
+    
     
     @objc func handleDismiss(){
         dismiss(animated: true, completion: nil)
@@ -49,21 +67,11 @@ class FinAidController: UICollectionViewController {
     
     @objc func handleFinAidForms() {
         
-        let svc = SFSafariViewController(url: NSURL(string: "http://financialaid.ucmerced.edu/forms/2018-2019")! as URL)
+        let svc = SFSafariViewController(url: NSURL(string: "https://financialaid.ucmerced.edu/forms")! as URL)
         self.present(svc, animated: true, completion: nil)
-//
-//        let finAidFormController = FinAidFormController()
-//        present(finAidFormController, animated: true, completion: nil)
+
     }
     
-    
-    @objc func handleFinWebsite() {
-        
-        let svc = SFSafariViewController(url: NSURL(string: "http://financialaid.ucmerced.edu/")! as URL)
-        self.present(svc, animated: true, completion: nil)
-        
-        
-        }
     
     
 }

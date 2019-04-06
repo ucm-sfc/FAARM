@@ -11,6 +11,22 @@ import UIKit
 
 extension RegistrarController {
     
+    @objc func createTranscriptButton(image: UIImage, handler: Selector ) -> UIButton {
+        let button = UIButton()
+        button.setImage(image, for: .normal)
+        button.addTarget(self, action: handler, for: .touchUpInside)
+        button.contentMode = .scaleAspectFit
+        return button
+    }
+    
+    @objc func createEnrollmentButton(image: UIImage, handler: Selector ) -> UIButton {
+        let button = UIButton()
+        button.setImage(image, for: .normal)
+        button.addTarget(self, action: handler, for: .touchUpInside)
+        button.contentMode = .scaleAspectFit
+        return button
+    }
+    
     @objc func createResourceButton(image: UIImage, handler: Selector ) -> UIButton {
         let button = UIButton()
         button.setImage(image, for: .normal)
@@ -19,7 +35,8 @@ extension RegistrarController {
         return button
     }
     
-    @objc func createTutorialsButton(image: UIImage, handler: Selector ) -> UIButton {
+    
+    @objc func createGPACalculatorButton(image: UIImage, handler: Selector ) -> UIButton {
         let button = UIButton()
         button.setImage(image, for: .normal)
         button.addTarget(self, action: handler, for: .touchUpInside)

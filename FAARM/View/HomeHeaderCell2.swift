@@ -34,7 +34,7 @@ class HomeHeaderCell: UICollectionViewCell {
     }()
     
     lazy var checkInImageView: UIImageView = {
-        let imageView = UIImageView(image: #imageLiteral(resourceName: "SFC Check In"))
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "CheckIn-1.png") )
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
@@ -94,9 +94,10 @@ class HomeHeaderCell: UICollectionViewCell {
         sfcImageView.anchor(top: imageSlider.bottomAnchor, paddingTop: 0, left: leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: rightAnchor, paddingRight: 0, width: 0, height: 20)
         
         // Add/anchor the check in button and the bottom label for the student services
+//        let checkInHeight = frame.width * 0.15
         addSubview(checkInButton)
         addSubview(studentServicesImageView)
-        checkInButton.anchor(top: sfcImageView.bottomAnchor, paddingTop: 10, left: leftAnchor, paddingLeft: 0, bottom: studentServicesImageView.topAnchor, paddingBotton: 10, right: rightAnchor, paddingRight: 0, width: 0, height: 0)
+        checkInButton.anchor(top: sfcImageView.bottomAnchor, paddingTop: 10, left: leftAnchor, paddingLeft: 10, bottom: studentServicesImageView.topAnchor, paddingBotton: 10, right: rightAnchor, paddingRight: 10, width: 0, height: 0)
         
         studentServicesImageView.anchor(top: nil, paddingTop: 0, left: leftAnchor, paddingLeft: 0, bottom: bottomAnchor, paddingBotton: 15, right: rightAnchor, paddingRight: 0, width: 0, height: 20)
         

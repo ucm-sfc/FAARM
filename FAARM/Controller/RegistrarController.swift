@@ -25,12 +25,21 @@ class RegistrarController: UICollectionViewController {
         guard let collectionView = collectionView else { return }
         collectionView.backgroundColor = .ucmBlue
         
-        let customNavigationBar = CustomNavigationView()
-        customNavigationBar.logoImageView.image = #imageLiteral(resourceName: "Registrar Title-1")
-        collectionView.addSubview(customNavigationBar)
-        customNavigationBar.anchorMiniNavBar(view: view)
-        
         setupUI()
+        
+    }
+    
+    @objc func handleTranscriptButton() {
+    
+        let svc = SFSafariViewController(url: NSURL(string: "https://registrar.ucmerced.edu/services/transcripts")! as URL)
+        self.present(svc, animated: true, completion: nil)
+    
+    }
+    
+    @objc func handleEnrollmentButton() {
+        
+        let svc = SFSafariViewController(url: NSURL(string: "https://registrar.ucmerced.edu/services/verifications#Enroll")! as URL)
+        self.present(svc, animated: true, completion: nil)
         
     }
     
@@ -39,14 +48,15 @@ class RegistrarController: UICollectionViewController {
         let layout = UICollectionViewFlowLayout()
         let registrarResourcesController = RegistrarResourcesController(collectionViewLayout: layout)
         present(registrarResourcesController, animated: true, completion: nil)
-       
         
     }
     
-    @objc func handleTutorialsButton() {
-        let svc = SFSafariViewController(url: NSURL(string: "https://www.youtube.com/watch?v=8NTTXuPHj5A&list=PL_V0P1jtk44v04RTUEd_BepJwFJ-kyho1")! as URL)
+    @objc func handleGPACalculatorButton() {
+        
+        let svc = SFSafariViewController(url: NSURL(string: "https://registrar.ucmerced.edu/policies/grades/gpa-calculator")! as URL)
         self.present(svc, animated: true, completion: nil)
     }
+    
     
     @objc func handleWebsiteButton() {
         

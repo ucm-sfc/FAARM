@@ -49,7 +49,7 @@ extension UIView {
     class IndentedCellLabel: UILabel {
         override func drawText(in rect: CGRect) {
             let insets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
-            let customRect = UIEdgeInsetsInsetRect(rect, insets)
+            let customRect = rect.inset(by: insets)
             super.drawText(in: customRect)
         }
     }
@@ -62,7 +62,7 @@ extension UIViewController {
     class IndentedLabel: UILabel {
         override func drawText(in rect: CGRect) {
             let insets = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 0)
-            let customRect = UIEdgeInsetsInsetRect(rect, insets)
+            let customRect = rect.inset(by: insets)
             super.drawText(in: customRect)
         }
     }

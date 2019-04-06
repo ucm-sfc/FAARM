@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1A17767F217E54A000483467 /* HomeHeaderCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17767E217E54A000483467 /* HomeHeaderCell2.swift */; };
+		1A323DA621F299F1004298C8 /* FATVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A323DA521F299F0004298C8 /* FATVController.swift */; };
+		1A323DA821F29A5F004298C8 /* FATVControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A323DA721F29A5F004298C8 /* FATVControllerSetup.swift */; };
+		1A323DAA21F29AC8004298C8 /* FATVControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A323DA921F29AC8004298C8 /* FATVControllerHelper.swift */; };
+		1A578B9322552D900076D807 /* PushNotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A578B9222552D900076D807 /* PushNotificationExtension.swift */; };
 		1A6A225E21E66C5800C0A64B /* RegistrarResourcesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A225D21E66C5800C0A64B /* RegistrarResourcesController.swift */; };
 		1A6A226021E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A225F21E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift */; };
 		1A6A226221E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A226121E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift */; };
 		1AAA3193217FCE6600B74D2F /* MSAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5655CB8120798540000599E5 /* MSAL.framework */; };
 		1AAA3194217FCE6600B74D2F /* MSAL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5655CB8120798540000599E5 /* MSAL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AF43FE22231D45C009D2CFE /* TFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF43FE12231D45C009D2CFE /* TFController.swift */; };
+		1AF43FE42231D7A6009D2CFE /* TFControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF43FE32231D7A6009D2CFE /* TFControllerSetup.swift */; };
+		1AF43FE62231DA40009D2CFE /* TFControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF43FE52231DA40009D2CFE /* TFControllerHelper.swift */; };
 		5640ED022087384800BE1FB1 /* CalendarController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5640ED012087384800BE1FB1 /* CalendarController+TableView.swift */; };
 		5640ED0520873CB900BE1FB1 /* CalendarAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5640ED0420873CB900BE1FB1 /* CalendarAddController.swift */; };
 		564F557D20853BC00060E974 /* CalendarController+getJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F557C20853BC00060E974 /* CalendarController+getJSON.swift */; };
 		564F557F208598ED0060E974 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F557E208598ED0060E974 /* MessageController.swift */; };
 		564F558120859AF10060E974 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F558020859AF10060E974 /* MessageView.swift */; };
 		564F558320859FD20060E974 /* UserInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F558220859FD20060E974 /* UserInputView.swift */; };
-		5655CB8220798540000599E5 /* MSAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5655CB8120798540000599E5 /* MSAL.framework */; };
 		5655CB8A20798C81000599E5 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5655CB8920798C81000599E5 /* CalendarController.swift */; };
 		56855358207DABB600170885 /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56855357207DABB500170885 /* CalendarEvent.swift */; };
 		5685CDF520A2B56B00E4FCD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5685CDF420A2B56B00E4FCD1 /* GoogleService-Info.plist */; };
@@ -84,9 +90,16 @@
 
 /* Begin PBXFileReference section */
 		1A17767E217E54A000483467 /* HomeHeaderCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderCell2.swift; sourceTree = "<group>"; };
+		1A323DA521F299F0004298C8 /* FATVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FATVController.swift; sourceTree = "<group>"; };
+		1A323DA721F29A5F004298C8 /* FATVControllerSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FATVControllerSetup.swift; sourceTree = "<group>"; };
+		1A323DA921F29AC8004298C8 /* FATVControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FATVControllerHelper.swift; sourceTree = "<group>"; };
+		1A578B9222552D900076D807 /* PushNotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationExtension.swift; sourceTree = "<group>"; };
 		1A6A225D21E66C5800C0A64B /* RegistrarResourcesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarResourcesController.swift; sourceTree = "<group>"; };
 		1A6A225F21E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarResourcesControllerSetup.swift; sourceTree = "<group>"; };
 		1A6A226121E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarResourcesControllerHelper.swift; sourceTree = "<group>"; };
+		1AF43FE12231D45C009D2CFE /* TFController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFController.swift; sourceTree = "<group>"; };
+		1AF43FE32231D7A6009D2CFE /* TFControllerSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFControllerSetup.swift; sourceTree = "<group>"; };
+		1AF43FE52231DA40009D2CFE /* TFControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFControllerHelper.swift; sourceTree = "<group>"; };
 		36A6B0F7ADB10BC1F6E988DB /* Pods_FAARM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FAARM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5638D1972093E0C5008D0757 /* FAARM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FAARM.entitlements; sourceTree = "<group>"; };
 		5640ED012087384800BE1FB1 /* CalendarController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalendarController+TableView.swift"; sourceTree = "<group>"; };
@@ -153,7 +166,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AAA3193217FCE6600B74D2F /* MSAL.framework in Frameworks */,
-				5655CB8220798540000599E5 /* MSAL.framework in Frameworks */,
 				C8942F83E724D0F9F6BBAEA3 /* Pods_FAARM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +176,8 @@
 		5685CDFB20A2D0CB00E4FCD1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				1A323DA921F29AC8004298C8 /* FATVControllerHelper.swift */,
+				1AF43FE52231DA40009D2CFE /* TFControllerHelper.swift */,
 				1A6A226121E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift */,
 				569C30E3206DB59B00C1A19D /* ContactControllerHelpers.swift */,
 				56AE5837208FB9B0002F3C51 /* AdmissionsControllerHelper.swift */,
@@ -173,6 +187,7 @@
 				56AE583D20901611002F3C51 /* FinAidControllerHelper.swift */,
 				56B06CAE2094632800B524AF /* RegistrarControllerHelper.swift */,
 				5685CDFE20A3E29300E4FCD1 /* RssParser.swift */,
+				1A578B9222552D900076D807 /* PushNotificationExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -213,6 +228,9 @@
 				569C30E0206DB50600C1A19D /* ContactController.swift */,
 				569C30E5206DB7FF00C1A19D /* ContactController+SetupUI.swift */,
 				56AE583F20901611002F3C51 /* FinAidController.swift */,
+				1A323DA521F299F0004298C8 /* FATVController.swift */,
+				1A323DA721F29A5F004298C8 /* FATVControllerSetup.swift */,
+				1AF43FE32231D7A6009D2CFE /* TFControllerSetup.swift */,
 				5685CE0120A3EF4000E4FCD1 /* FinAidFormController.swift */,
 				56AE583E20901611002F3C51 /* FinAidControllerSetup.swift */,
 				56B5D4ED2059DADB00381FF6 /* HomeController.swift */,
@@ -234,6 +252,7 @@
 				5685CE1320A3F85300E4FCD1 /* RegisterController+SetupUI.swift */,
 				1A6A225D21E66C5800C0A64B /* RegistrarResourcesController.swift */,
 				1A6A225F21E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift */,
+				1AF43FE12231D45C009D2CFE /* TFController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -324,13 +343,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Christopher Villanueva";
 				TargetAttributes = {
 					56B5D4E72059DADB00381FF6 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -448,6 +474,8 @@
 				56AE584E209162BF002F3C51 /* NotificationsDeleteController.swift in Sources */,
 				564F557D20853BC00060E974 /* CalendarController+getJSON.swift in Sources */,
 				1A6A226021E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift in Sources */,
+				1A323DAA21F29AC8004298C8 /* FATVControllerHelper.swift in Sources */,
+				1AF43FE42231D7A6009D2CFE /* TFControllerSetup.swift in Sources */,
 				56AE5838208FB9B0002F3C51 /* AdmissionsController.swift in Sources */,
 				5685CDF820A2C19100E4FCD1 /* RegisterController.swift in Sources */,
 				5685CE0620A3F60800E4FCD1 /* CalendarAddController+Handlers.swift in Sources */,
@@ -463,6 +491,7 @@
 				56B5D4EE2059DADB00381FF6 /* HomeController.swift in Sources */,
 				56855358207DABB600170885 /* CalendarEvent.swift in Sources */,
 				56B06CB12094632800B524AF /* RegistrarControllerHelper.swift in Sources */,
+				1AF43FE62231DA40009D2CFE /* TFControllerHelper.swift in Sources */,
 				56AE5839208FB9B0002F3C51 /* AdmissionsControllerSetup.swift in Sources */,
 				5685CE0420A3F5B200E4FCD1 /* CalendarController+SetupUI.swift in Sources */,
 				5685CE0920A3F66D00E4FCD1 /* NotificationsController+SetupUI.swift in Sources */,
@@ -475,7 +504,9 @@
 				5685CE1820A3F91800E4FCD1 /* LoginController+SetupUI.swift in Sources */,
 				5685CE0220A3EF4000E4FCD1 /* FinAidFormController.swift in Sources */,
 				5685CDFF20A3E29300E4FCD1 /* RssParser.swift in Sources */,
+				1AF43FE22231D45C009D2CFE /* TFController.swift in Sources */,
 				569C30E4206DB59B00C1A19D /* ContactControllerHelpers.swift in Sources */,
+				1A578B9322552D900076D807 /* PushNotificationExtension.swift in Sources */,
 				56AE584220901612002F3C51 /* FinAidController.swift in Sources */,
 				5685CE0B20A3F67D00E4FCD1 /* NotificationsController+UITableView.swift in Sources */,
 				569C30E1206DB50600C1A19D /* ContactController.swift in Sources */,
@@ -484,8 +515,10 @@
 				5685CE0E20A3F74E00E4FCD1 /* NotificationsDeleteController+SetupUI.swift in Sources */,
 				564F557F208598ED0060E974 /* MessageController.swift in Sources */,
 				569C30D02059F79B00C1A19D /* Extensions.swift in Sources */,
+				1A323DA621F299F1004298C8 /* FATVController.swift in Sources */,
 				1A6A226221E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift in Sources */,
 				569C30E8206E017800C1A19D /* HomeController+Handlers.swift in Sources */,
+				1A323DA821F29A5F004298C8 /* FATVControllerSetup.swift in Sources */,
 				5685CE1620A3F86700E4FCD1 /* RegisterController+Handlers.swift in Sources */,
 				5685CDFA20A2C1A300E4FCD1 /* LoginController.swift in Sources */,
 				56AE581E208EFB93002F3C51 /* CalendarAddController+SetupUI.swift in Sources */,
@@ -566,7 +599,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -619,7 +652,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -635,18 +668,18 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = FAARM/FAARM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QHY57GL3DG;
+				DEVELOPMENT_TEAM = W8BB6W47ZR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FAARM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chrisvillanueva.FAARMPush;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SFC.SFCMobileApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -658,18 +691,18 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = FAARM/FAARM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QHY57GL3DG;
+				DEVELOPMENT_TEAM = W8BB6W47ZR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FAARM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chrisvillanueva.FAARMPush;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SFC.SFCMobileApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
