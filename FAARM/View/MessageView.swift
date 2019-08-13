@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class MessageView: UICollectionViewCell, UIPickerViewDelegate, UIPickerViewDataSource {
 
     let returnArrow: UIButton = {
@@ -128,13 +127,10 @@ class MessageView: UICollectionViewCell, UIPickerViewDelegate, UIPickerViewDataS
     
     var messageController: MessageController?
     
-    
     let questionType = ["Please Select...", "Financial Aid", "Registrars Office", "Undergraduate Admissions", "Student Business Services", "Students First Center", "Graduate Division", "Academic Support Services"]
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        
         setupUI()
     }
     
@@ -153,7 +149,6 @@ class MessageView: UICollectionViewCell, UIPickerViewDelegate, UIPickerViewDataS
     
     @objc private func handleTextInputChange() {
         let isFormValid = firstNameView.inputTextField.text?.count ?? 0 > 0 && lastNameView.inputTextField.text?.count ?? 0 > 0 && emailView.inputTextField.text?.count ?? 0 > 0 && phoneNumberView.inputTextField.text?.count ?? 0 > 0 && descriptionView.inputTextField.text?.count ?? 0 > 0 /* && messageTextView.text.count > 0*/
-    
         
         if isFormValid {
             submitButton.isEnabled = true
@@ -206,7 +201,6 @@ class MessageView: UICollectionViewCell, UIPickerViewDelegate, UIPickerViewDataS
         messageTextView.anchor(top: messageLabel.bottomAnchor, paddingTop: 8, left: leftAnchor, paddingLeft: 40, bottom: nil, paddingBotton: 0, right: rightAnchor, paddingRight: 40, width: 0, height: 350)
         
         submitButton.anchor(top: messageTextView.bottomAnchor, paddingTop: 25, left: leftAnchor, paddingLeft: 40, bottom: nil, paddingBotton: 0, right: rightAnchor, paddingRight: 40, width: 0, height: 60)
-        
     }
     
     @objc func handleDismiss(){
@@ -215,14 +209,8 @@ class MessageView: UICollectionViewCell, UIPickerViewDelegate, UIPickerViewDataS
     @objc func handleSubmit(){
         messageController?.handleSubmit()
     }
-
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
-
-
-
-
-

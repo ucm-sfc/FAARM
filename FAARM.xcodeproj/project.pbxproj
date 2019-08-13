@@ -11,12 +11,9 @@
 		1A323DA621F299F1004298C8 /* FATVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A323DA521F299F0004298C8 /* FATVController.swift */; };
 		1A323DA821F29A5F004298C8 /* FATVControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A323DA721F29A5F004298C8 /* FATVControllerSetup.swift */; };
 		1A323DAA21F29AC8004298C8 /* FATVControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A323DA921F29AC8004298C8 /* FATVControllerHelper.swift */; };
-		1A578B9322552D900076D807 /* PushNotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A578B9222552D900076D807 /* PushNotificationExtension.swift */; };
 		1A6A225E21E66C5800C0A64B /* RegistrarResourcesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A225D21E66C5800C0A64B /* RegistrarResourcesController.swift */; };
 		1A6A226021E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A225F21E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift */; };
 		1A6A226221E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A226121E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift */; };
-		1AAA3193217FCE6600B74D2F /* MSAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5655CB8120798540000599E5 /* MSAL.framework */; };
-		1AAA3194217FCE6600B74D2F /* MSAL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5655CB8120798540000599E5 /* MSAL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AF43FE22231D45C009D2CFE /* TFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF43FE12231D45C009D2CFE /* TFController.swift */; };
 		1AF43FE42231D7A6009D2CFE /* TFControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF43FE32231D7A6009D2CFE /* TFControllerSetup.swift */; };
 		1AF43FE62231DA40009D2CFE /* TFControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF43FE52231DA40009D2CFE /* TFControllerHelper.swift */; };
@@ -69,9 +66,9 @@
 		56B5D4EE2059DADB00381FF6 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B5D4ED2059DADB00381FF6 /* HomeController.swift */; };
 		56B5D4F12059DADB00381FF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B5D4EF2059DADB00381FF6 /* Main.storyboard */; };
 		56B5D4F32059DADB00381FF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B5D4F22059DADB00381FF6 /* Assets.xcassets */; };
-		56B5D4F62059DADB00381FF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B5D4F42059DADB00381FF6 /* LaunchScreen.storyboard */; };
 		56E4C8112080865A00ECEE9A /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E4C8102080865A00ECEE9A /* CalendarCell.swift */; };
 		C8942F83E724D0F9F6BBAEA3 /* Pods_FAARM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A6B0F7ADB10BC1F6E988DB /* Pods_FAARM.framework */; };
+		CE6656FB22778CC300151630 /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6656FA22778CC300151630 /* CheckInternet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -81,7 +78,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1AAA3194217FCE6600B74D2F /* MSAL.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,7 +89,6 @@
 		1A323DA521F299F0004298C8 /* FATVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FATVController.swift; sourceTree = "<group>"; };
 		1A323DA721F29A5F004298C8 /* FATVControllerSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FATVControllerSetup.swift; sourceTree = "<group>"; };
 		1A323DA921F29AC8004298C8 /* FATVControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FATVControllerHelper.swift; sourceTree = "<group>"; };
-		1A578B9222552D900076D807 /* PushNotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationExtension.swift; sourceTree = "<group>"; };
 		1A6A225D21E66C5800C0A64B /* RegistrarResourcesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarResourcesController.swift; sourceTree = "<group>"; };
 		1A6A225F21E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarResourcesControllerSetup.swift; sourceTree = "<group>"; };
 		1A6A226121E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarResourcesControllerHelper.swift; sourceTree = "<group>"; };
@@ -108,7 +103,6 @@
 		564F557E208598ED0060E974 /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		564F558020859AF10060E974 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		564F558220859FD20060E974 /* UserInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputView.swift; sourceTree = "<group>"; };
-		5655CB8120798540000599E5 /* MSAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MSAL.framework; path = Carthage/Build/iOS/MSAL.framework; sourceTree = "<group>"; };
 		5655CB8920798C81000599E5 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		56855357207DABB500170885 /* CalendarEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
 		5685CDF420A2B56B00E4FCD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -153,10 +147,10 @@
 		56B5D4ED2059DADB00381FF6 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		56B5D4F02059DADB00381FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56B5D4F22059DADB00381FF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		56B5D4F52059DADB00381FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56B5D4F72059DADB00381FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56E4C8102080865A00ECEE9A /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		8A6DEB31DF327959B1C80A1C /* Pods-FAARM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FAARM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FAARM/Pods-FAARM.debug.xcconfig"; sourceTree = "<group>"; };
+		CE6656FA22778CC300151630 /* CheckInternet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
 		EB334C5E643119E0D84AC147 /* Pods-FAARM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FAARM.release.xcconfig"; path = "Pods/Target Support Files/Pods-FAARM/Pods-FAARM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,7 +159,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AAA3193217FCE6600B74D2F /* MSAL.framework in Frameworks */,
 				C8942F83E724D0F9F6BBAEA3 /* Pods_FAARM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,18 +169,18 @@
 		5685CDFB20A2D0CB00E4FCD1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				1A323DA921F29AC8004298C8 /* FATVControllerHelper.swift */,
-				1AF43FE52231DA40009D2CFE /* TFControllerHelper.swift */,
-				1A6A226121E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift */,
-				569C30E3206DB59B00C1A19D /* ContactControllerHelpers.swift */,
 				56AE5837208FB9B0002F3C51 /* AdmissionsControllerHelper.swift */,
+				CE6656FA22778CC300151630 /* CheckInternet.swift */,
+				569C30E3206DB59B00C1A19D /* ContactControllerHelpers.swift */,
 				56AE584B20907D31002F3C51 /* CoreDataManager.swift */,
 				569C30D72061639F00C1A19D /* CustomNavigationView.swift */,
 				569C30CF2059F79B00C1A19D /* Extensions.swift */,
+				1A323DA921F29AC8004298C8 /* FATVControllerHelper.swift */,
 				56AE583D20901611002F3C51 /* FinAidControllerHelper.swift */,
 				56B06CAE2094632800B524AF /* RegistrarControllerHelper.swift */,
+				1A6A226121E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift */,
 				5685CDFE20A3E29300E4FCD1 /* RssParser.swift */,
-				1A578B9222552D900076D807 /* PushNotificationExtension.swift */,
+				1AF43FE52231DA40009D2CFE /* TFControllerHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -227,12 +220,11 @@
 				5640ED012087384800BE1FB1 /* CalendarController+TableView.swift */,
 				569C30E0206DB50600C1A19D /* ContactController.swift */,
 				569C30E5206DB7FF00C1A19D /* ContactController+SetupUI.swift */,
-				56AE583F20901611002F3C51 /* FinAidController.swift */,
 				1A323DA521F299F0004298C8 /* FATVController.swift */,
 				1A323DA721F29A5F004298C8 /* FATVControllerSetup.swift */,
-				1AF43FE32231D7A6009D2CFE /* TFControllerSetup.swift */,
-				5685CE0120A3EF4000E4FCD1 /* FinAidFormController.swift */,
+				56AE583F20901611002F3C51 /* FinAidController.swift */,
 				56AE583E20901611002F3C51 /* FinAidControllerSetup.swift */,
+				5685CE0120A3EF4000E4FCD1 /* FinAidFormController.swift */,
 				56B5D4ED2059DADB00381FF6 /* HomeController.swift */,
 				569C30DA2061724500C1A19D /* HomeController+BuildCollectionView.swift */,
 				569C30E7206E017800C1A19D /* HomeController+Handlers.swift */,
@@ -245,14 +237,15 @@
 				56AE584D209162BF002F3C51 /* NotificationsDeleteController.swift */,
 				5685CE0F20A3F75E00E4FCD1 /* NotificationsDeleteController+Handlers.swift */,
 				5685CE0D20A3F74E00E4FCD1 /* NotificationsDeleteController+SetupUI.swift */,
-				56B06CAD2094632800B524AF /* RegistrarControllerSetup.swift */,
-				56B06CAB2094632800B524AF /* RegistrarController.swift */,
 				5685CDF720A2C19100E4FCD1 /* RegisterController.swift */,
 				5685CE1520A3F86700E4FCD1 /* RegisterController+Handlers.swift */,
 				5685CE1320A3F85300E4FCD1 /* RegisterController+SetupUI.swift */,
+				56B06CAB2094632800B524AF /* RegistrarController.swift */,
+				56B06CAD2094632800B524AF /* RegistrarControllerSetup.swift */,
 				1A6A225D21E66C5800C0A64B /* RegistrarResourcesController.swift */,
 				1A6A225F21E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift */,
 				1AF43FE12231D45C009D2CFE /* TFController.swift */,
+				1AF43FE32231D7A6009D2CFE /* TFControllerSetup.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -286,7 +279,6 @@
 				5685CDFB20A2D0CB00E4FCD1 /* Helpers */,
 				56B5D4EF2059DADB00381FF6 /* Main.storyboard */,
 				56B5D4F22059DADB00381FF6 /* Assets.xcassets */,
-				56B5D4F42059DADB00381FF6 /* LaunchScreen.storyboard */,
 				56B5D4F72059DADB00381FF6 /* Info.plist */,
 				5685CDF420A2B56B00E4FCD1 /* GoogleService-Info.plist */,
 				56AE581F208F1CF4002F3C51 /* FAARMDataModels.xcdatamodeld */,
@@ -306,7 +298,6 @@
 		B2DD46ECBF3C6C408E528068 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5655CB8120798540000599E5 /* MSAL.framework */,
 				36A6B0F7ADB10BC1F6E988DB /* Pods_FAARM.framework */,
 			);
 			name = Frameworks;
@@ -344,7 +335,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Christopher Villanueva";
+				ORGANIZATIONNAME = "UC Merced – Students First Center";
 				TargetAttributes = {
 					56B5D4E72059DADB00381FF6 = {
 						CreatedOnToolsVersion = 9.2;
@@ -387,7 +378,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56B5D4F62059DADB00381FF6 /* LaunchScreen.storyboard in Resources */,
 				5685CDF520A2B56B00E4FCD1 /* GoogleService-Info.plist in Resources */,
 				56B5D4F32059DADB00381FF6 /* Assets.xcassets in Resources */,
 				56B5D4F12059DADB00381FF6 /* Main.storyboard in Resources */,
@@ -399,7 +389,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		5655CB8320798555000599E5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -409,7 +399,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "
+";
 		};
 		9B095311E692F0C5B798F69C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -506,10 +497,10 @@
 				5685CDFF20A3E29300E4FCD1 /* RssParser.swift in Sources */,
 				1AF43FE22231D45C009D2CFE /* TFController.swift in Sources */,
 				569C30E4206DB59B00C1A19D /* ContactControllerHelpers.swift in Sources */,
-				1A578B9322552D900076D807 /* PushNotificationExtension.swift in Sources */,
 				56AE584220901612002F3C51 /* FinAidController.swift in Sources */,
 				5685CE0B20A3F67D00E4FCD1 /* NotificationsController+UITableView.swift in Sources */,
 				569C30E1206DB50600C1A19D /* ContactController.swift in Sources */,
+				CE6656FB22778CC300151630 /* CheckInternet.swift in Sources */,
 				56E4C8112080865A00ECEE9A /* CalendarCell.swift in Sources */,
 				5685CE1420A3F85300E4FCD1 /* RegisterController+SetupUI.swift in Sources */,
 				5685CE0E20A3F74E00E4FCD1 /* NotificationsDeleteController+SetupUI.swift in Sources */,
@@ -536,14 +527,6 @@
 				56B5D4F02059DADB00381FF6 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		56B5D4F42059DADB00381FF6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56B5D4F52059DADB00381FF6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -674,12 +657,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FAARM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SFC.SFCMobileApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -697,12 +680,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FAARM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SFC.SFCMobileApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

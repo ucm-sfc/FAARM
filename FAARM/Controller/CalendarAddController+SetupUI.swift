@@ -22,14 +22,35 @@ extension CalendarAddController {
         detailsView.addSubview(dateLabel)
         detailsView.addSubview(descriptionTextView)
         detailsView.addSubview(buttonsStackView)
-        buttonsStackView.addArrangedSubview(addButton)
+        
+        let prefs = UserDefaults.standard
+        var eventsArray = prefs.object(forKey: "subbedEvents") as? [String] ?? [String]()
+        
+        var isSubbed = false
+        
+        let string = descriptionTextView.text.uppercased().filter("ABCDEFGHIJKLKMNOPQRSTUVWXYZ1234567890 ".contains).replacingOccurrences(of: " ", with: "_", options: .literal, range: nil)
+        
+        for i in 0 ..< eventsArray.count{
+            if (eventsArray[i] == string){
+                isSubbed = true
+                break
+            }
+        }
+        
+        if(isSubbed){
+            buttonsStackView.addArrangedSubview(deleteButton)
+        }
+        else{
+            buttonsStackView.addArrangedSubview(addButton)
+        }
+        
         buttonsStackView.addArrangedSubview(cancelButton)
     
      
         dateLabel.anchor(top: detailsView.topAnchor, paddingTop: 0, left: detailsView.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: detailsView.rightAnchor, paddingRight: 0, width: 0, height: 50)
         descriptionTextView.anchor(top: dateLabel.bottomAnchor, paddingTop: 8, left: detailsView.leftAnchor, paddingLeft: 16, bottom: buttonsStackView.topAnchor, paddingBotton: 5, right: detailsView.rightAnchor, paddingRight: 8, width: 0, height: 0)
         
-        let buttonHeight = view.frame.height * 0.6 * 0.1
+        let buttonHeight = view.frame.height * 0.06
         buttonsStackView.anchor(top: nil, paddingTop: 0, left: detailsView.leftAnchor, paddingLeft: 10, bottom: detailsView.bottomAnchor, paddingBotton: 10, right: detailsView.rightAnchor, paddingRight: 10, width: 0, height: buttonHeight)
     }
 }

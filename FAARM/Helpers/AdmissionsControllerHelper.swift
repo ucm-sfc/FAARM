@@ -8,9 +8,7 @@
 
 import UIKit
 
-
 extension AdmissionsController {
-
 
     @objc func createFATVButton(image: UIImage, handler: Selector  ) -> UIButton {
         let button = UIButton()
@@ -28,7 +26,6 @@ extension AdmissionsController {
         return button
     }
     
-    
     @objc func createBackButton(image: UIImage, handler: Selector ) -> UIButton {
         let button = UIButton()
         button.setImage(image, for: .normal)
@@ -36,5 +33,4 @@ extension AdmissionsController {
         button.contentMode = .scaleAspectFill
         return button
     }
-
 }

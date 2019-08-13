@@ -16,7 +16,7 @@ let headerId = "headerId"
 class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     // We use these to give the icons their image
-    let iconImages = [#imageLiteral(resourceName: "Billing-3.png"), #imageLiteral(resourceName: "Tutorials-4.png") , #imageLiteral(resourceName: "Registrar"), #imageLiteral(resourceName: "Campus maps-1.png"), #imageLiteral(resourceName: "Calendar"), #imageLiteral(resourceName: "Contact")]
+    let iconImages = [#imageLiteral(resourceName: "Billing-3.png"), #imageLiteral(resourceName: "Tutorials-4.png"), #imageLiteral(resourceName: "Registrar"), #imageLiteral(resourceName: "Campus maps-1.png"), #imageLiteral(resourceName: "Calendar"), #imageLiteral(resourceName: "Contact")]
  
     // This function is called whenever an icon is touched or clicked on
     // Which then passes the corresponding icon's item number to
@@ -27,7 +27,6 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
        setupCollectionView()
     }
 }

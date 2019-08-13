@@ -16,9 +16,16 @@ class ContactController: UIViewController {
     
     let headerLabel: UILabel = {
         let label = UILabel()
-        label.text = "Get your questions answered"
+        label.text = "Get your questions answered!"
         label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: 24)
+        
+        let model = UIDevice.current.model
+        
+        if (model != "iPhone" && model != "iPod"){
+            label.font = UIFont.boldSystemFont(ofSize: 40)
+        }
+        
         label.backgroundColor = .clear
         label.numberOfLines = 1
         label.adjustsFontSizeToFitWidth = true
@@ -27,13 +34,24 @@ class ContactController: UIViewController {
         return label
     }()
     
-    lazy var dismissButton: UIButton = {
-        let button = UIButton()
-        button.tintColor = .white
-        button.setImage(#imageLiteral(resourceName: "back_arrow").withRenderingMode(.alwaysTemplate), for: .normal)
-        button.addTarget(self, action: #selector(handleDismiss), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
+    let socialLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Follow us on social media!"
+        label.textColor = .white
+        label.font = UIFont.boldSystemFont(ofSize: 24)
+        
+        let model = UIDevice.current.model
+        
+        if (model != "iPhone" && model != "iPod"){
+            label.font = UIFont.boldSystemFont(ofSize: 40)
+        }
+        
+        label.backgroundColor = .clear
+        label.numberOfLines = 1
+        label.adjustsFontSizeToFitWidth = true
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .center
+        return label
     }()
     
     let dimView: UIView = {
@@ -50,11 +68,20 @@ class ContactController: UIViewController {
         sv.translatesAutoresizingMaskIntoConstraints = false
         return sv
     }()
-    
+    /*
     let contactLabelsStackView: UIStackView = {
         let sv = UIStackView()
         sv.axis = .horizontal
         sv.distribution = .fillEqually
+        sv.translatesAutoresizingMaskIntoConstraints = false
+        return sv
+    }()
+    */
+    let socialButtonsStackView: UIStackView = {
+        let sv = UIStackView()
+        sv.axis = .horizontal
+        sv.distribution = .fillEqually
+        sv.spacing = 10
         sv.translatesAutoresizingMaskIntoConstraints = false
         return sv
     }()
@@ -76,7 +103,7 @@ class ContactController: UIViewController {
     }
     
     /*
-     *
+     * This function handles the contact form for the SFC
      */
     @objc func handleEmail() {
         dismiss(animated: true) {
@@ -84,12 +111,24 @@ class ContactController: UIViewController {
         }
     }
     
+    //URL handlers derived from ContactControllerHelpers.swift
+    @objc func handleFacebook(){
+        SocialNetwork.Facebook.openPage()
+    }
+    @objc func handleTwitter(){
+        SocialNetwork.Twitter.openPage()
+    }
+    @objc func handleInstagram(){
+        SocialNetwork.Instagram.openPage()
+    }
+    @objc func handleSnapchat(){
+        SocialNetwork.Snapchat.openPage()
+    }
     
     @objc func handleDismiss(){
         dismiss(animated: true, completion: nil)
     }
 }
-
 
 // Helper function inserted by Swift 4.2 migrator.
 fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {

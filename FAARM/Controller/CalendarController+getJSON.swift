@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 extension CalendarController {
     
@@ -18,6 +19,9 @@ extension CalendarController {
      * CalendarEvent, and then store to our array
      */
     func fetchCalendarEvents() {
+        
+        let prefs = UserDefaults.standard
+        var eventsArray = prefs.object(forKey: "subbedEvents") as? [String] ?? [String]()
         
         // Create an active URL session using our known URL String
         guard let url = URL(string: calendarUrl) else { return }
@@ -48,6 +52,13 @@ extension CalendarController {
                             var calendarEvent = CalendarEvent()
                             
                             let name = itemDict.value(forKey: "summary") as? String
+                            
+                            let string = name!.uppercased().filter("ABCDEFGHIJKLKMNOPQRSTUVWXYZ1234567890 ".contains).replacingOccurrences(of: " ", with: "_", options: .literal, range: nil)
+                            
+                            if (!eventsArray.isEmpty) {
+                                eventsArray = eventsArray.filter{$0 != string}
+                            }
+                            
                             let description = itemDict.value(forKey: "description") as? String
                             
                             // Set the values of our new CalendarEvent object
@@ -82,6 +93,22 @@ extension CalendarController {
                         }
                     }
                 }
+                
+                if (!eventsArray.isEmpty){
+                    for i in 0 ..< eventsArray.count{
+                        Messaging.messaging().unsubscribe(fromTopic: eventsArray[i])
+                        print("User is now unsubbed from: " + eventsArray[i])
+                    }
+                    
+                    var finalEventsArray = prefs.object(forKey: "subbedEvents") as? [String] ?? [String]()
+                    
+                    for i in 0 ..< eventsArray.count{
+                        finalEventsArray = finalEventsArray.filter{$0 != eventsArray[i]}
+                    }
+                    
+                    prefs.set(finalEventsArray, forKey: "subbedEvents")
+                }
+                
                 /* Get off the main thread and reload tableView
                  * This is so the table can refresh but not
                  * freeze the UI (reloading and UI would be on different threads)
@@ -91,6 +118,7 @@ extension CalendarController {
                 }
             }
             }.resume()
+        
     }
     
     /* getTimeIntervalValue:

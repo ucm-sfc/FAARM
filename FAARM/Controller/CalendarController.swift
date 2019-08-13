@@ -32,6 +32,13 @@ class CalendarController: UIViewController, UITableViewDelegate, UITableViewData
         let label = UILabel()
         label.text = "Upcoming Deadlines"
         label.font = UIFont.boldSystemFont(ofSize: 28)
+        
+        let model = UIDevice.current.model
+        
+        if (model != "iPhone" && model != "iPod"){
+           label.font = UIFont.boldSystemFont(ofSize: 35)
+        }
+        
         label.textColor = .white
         label.backgroundColor = .ucmBlue
         label.numberOfLines = 0
@@ -52,12 +59,14 @@ class CalendarController: UIViewController, UITableViewDelegate, UITableViewData
      */
     var calendarEvents = [CalendarEvent]()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if(CheckInternet.Connection()){
+            fetchCalendarEvents()
+        }
+        
         setupUI()
-        fetchCalendarEvents()
     }
     
     // Dismiss this view controller

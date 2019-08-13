@@ -43,5 +43,4 @@ struct CalendarEvent {
         self.year = dictionary["year"] as? String ?? ""
         self.timeInterval = dictionary["timeInterval"] as? Int ?? -1
     }
-
 }

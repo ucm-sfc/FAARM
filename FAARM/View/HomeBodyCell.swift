@@ -15,8 +15,14 @@ class HomeBodyCell: UICollectionViewCell {
     let iconImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
+        
+        let model = UIDevice.current.model
+        
+        if (model != "iPhone" && model != "iPod"){
+            imageView.contentMode = .scaleToFill
+        }
+        
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.backgroundColor = .red
         return imageView
     }()
     
@@ -34,6 +40,4 @@ class HomeBodyCell: UICollectionViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
 }

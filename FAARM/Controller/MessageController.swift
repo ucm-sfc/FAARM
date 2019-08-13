@@ -55,7 +55,7 @@ class MessageController: UICollectionViewController, UICollectionViewDelegateFlo
     
     func sendEmail() {
         
-        let successAlertController = UIAlertController(title: "Success", message: "Your message has been sent to the Student First Center's center. You will receive an email response", preferredStyle: .alert)
+        let successAlertController = UIAlertController(title: "Success!", message: "Your message has been sent to the Student First Center's center. You will receive an email response.", preferredStyle: .alert)
         successAlertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (alert) in
             self.handleDismiss()
         }))

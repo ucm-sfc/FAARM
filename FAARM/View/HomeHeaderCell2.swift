@@ -21,35 +21,28 @@ class HomeHeaderCell: UICollectionViewCell {
     
     let announcementsImageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "Announcements"))
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleToFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
     let sfcImageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "SFC"))
-        imageView.contentMode = .scaleAspectFill
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
-    }()
-    
-    lazy var checkInImageView: UIImageView = {
-        let imageView = UIImageView(image: #imageLiteral(resourceName: "CheckIn-1.png") )
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleToFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
     lazy var checkInButton: UIButton = {
         let button = UIButton()
-        button.setImage(checkInImageView.image, for: .normal)
+        button.setImage(#imageLiteral(resourceName: "CheckIn-1.png"), for: .normal)
         button.addTarget(self, action: #selector(handleCheckIn), for: .touchUpInside)
         return button
     }()
     
     let studentServicesImageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "Student Services"))
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleToFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
         
@@ -60,7 +53,6 @@ class HomeHeaderCell: UICollectionViewCell {
     @objc func handleCheckIn() {
         homeController?.handleCheckIn()
     }
-    
     
     /* setupHeader:
      * This function will add everything we declared above this and anchor to the scene
@@ -75,31 +67,27 @@ class HomeHeaderCell: UICollectionViewCell {
         
         // Add and anchor the announcements label
         addSubview(announcementsImageView)
-        announcementsImageView.anchor(top: customNavigationBar.bottomAnchor, paddingTop: 0, left: leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: rightAnchor, paddingRight: 0, width: 0, height: 20)
-        
-        //  Define image slider and then add/anchor it
-        //  let imageSliderLayout = UICollectionViewLayout()
+        announcementsImageView.anchor(top: customNavigationBar.bottomAnchor, paddingTop: 0, left: leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: rightAnchor, paddingRight: 0, width: 0, height: frame.height * 0.055)
         
         let imageSlider = HomeSliderView()
-        let imageSliderHeight = frame.width * 0.42
+        //let imageSliderHeight = frame.height * 0.42
         imageSlider.screenWidth = frame.width // we need so that the slider knows how big the screen is
+        imageSlider.screenHeight = frame.height
         imageSlider.setupView() // Get the view set up
         addSubview(imageSlider)
-        imageSlider.anchor(top: announcementsImageView.bottomAnchor, paddingTop: 0, left: leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: rightAnchor, paddingRight: 0, width: 0, height: imageSliderHeight)
-        
-        
+        addSubview(sfcImageView)
+        imageSlider.anchor(top: announcementsImageView.bottomAnchor, paddingTop: 0, left: leftAnchor, paddingLeft: 0, bottom: sfcImageView.topAnchor, paddingBotton: 0, right: rightAnchor, paddingRight: 0, width: 0, height: 0)
         
         // Add and anchor the SFC label
-        addSubview(sfcImageView)
-        sfcImageView.anchor(top: imageSlider.bottomAnchor, paddingTop: 0, left: leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: rightAnchor, paddingRight: 0, width: 0, height: 20)
+        
+        sfcImageView.anchor(top: announcementsImageView.bottomAnchor, paddingTop: frame.height * 0.4, left: leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: rightAnchor, paddingRight: 0, width: 0, height: frame.height * 0.055)
         
         // Add/anchor the check in button and the bottom label for the student services
-//        let checkInHeight = frame.width * 0.15
         addSubview(checkInButton)
         addSubview(studentServicesImageView)
-        checkInButton.anchor(top: sfcImageView.bottomAnchor, paddingTop: 10, left: leftAnchor, paddingLeft: 10, bottom: studentServicesImageView.topAnchor, paddingBotton: 10, right: rightAnchor, paddingRight: 10, width: 0, height: 0)
+        checkInButton.anchor(top: sfcImageView.bottomAnchor, paddingTop: frame.height * 0.025, left: leftAnchor, paddingLeft: frame.width * 0.015, bottom: studentServicesImageView.topAnchor, paddingBotton: frame.height * 0.025, right: rightAnchor, paddingRight: frame.width * 0.015, width: 0, height: 0)
         
-        studentServicesImageView.anchor(top: nil, paddingTop: 0, left: leftAnchor, paddingLeft: 0, bottom: bottomAnchor, paddingBotton: 15, right: rightAnchor, paddingRight: 0, width: 0, height: 20)
+        studentServicesImageView.anchor(top: announcementsImageView.bottomAnchor, paddingTop: frame.height * 0.625, left: leftAnchor, paddingLeft: 0, bottom: bottomAnchor, paddingBotton: 15, right: rightAnchor, paddingRight: 0, width: 0, height: frame.height * 0.055)
         
         
     }
@@ -115,5 +103,4 @@ class HomeHeaderCell: UICollectionViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }

@@ -13,7 +13,7 @@ class FATVController: UICollectionViewController {
     
     let UniversityImageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "UniversityBackground"))
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleToFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()

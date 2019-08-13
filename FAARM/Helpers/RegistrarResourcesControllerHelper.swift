@@ -11,7 +11,6 @@ import UIKit
 
 extension RegistrarResourcesController {
     
-    
     @objc func createCourseScheduleButton(image: UIImage, handler: Selector ) -> UIButton {
         let button = UIButton()
         button.setImage(image, for: .normal)
@@ -35,6 +34,5 @@ extension RegistrarResourcesController {
         button.contentMode = .scaleAspectFill
         return button
     }
-    
     
 }

@@ -15,10 +15,14 @@ class HomeSliderView: UIView, UICollectionViewDataSource, UICollectionViewDelega
     
     // We use this to know how big the screen is
     var screenWidth: CGFloat?
+    var screenHeight: CGFloat?
+    
+    var imageSliderPaddingTop: CGFloat?
+    var imageSliderPaddingBottom: CGFloat?
     
     let rufusImageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "Rufus"))
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleToFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -33,10 +37,8 @@ class HomeSliderView: UIView, UICollectionViewDataSource, UICollectionViewDelega
         return cv
     }()
     
-    
-    // This function will set up the the way our slider will look
-    // It needs to be called manually from wherever u create
-    // this slider (HomeHeaderCell)
+    // This function will set up the the way our slider will look.
+    // It needs to be called manually from wherever you create this slider (HomeHeaderCell)
     func setupView() {
         backgroundColor = .white
         addSubview(rufusImageView)
@@ -45,14 +47,22 @@ class HomeSliderView: UIView, UICollectionViewDataSource, UICollectionViewDelega
         let rufusWidth = screenWidth / 3
         rufusImageView.anchor(top: topAnchor, paddingTop: 0, left: leftAnchor, paddingLeft: 0, bottom: bottomAnchor, paddingBotton: 0, right: nil, paddingRight: 0, width: rufusWidth, height: 0)
         
-       
-        let sliderWidth = screenWidth * (2/3) - 30
-        let sliderHeight = sliderWidth * 0.6
         imageSliderView.dataSource = self
         imageSliderView.delegate = self
         imageSliderView.register(HomeSliderCell.self, forCellWithReuseIdentifier: cellId)
         addSubview(imageSliderView)
-        imageSliderView.anchor(top: topAnchor, paddingTop: 15, left: rufusImageView.rightAnchor, paddingLeft: 15, bottom: nil, paddingBotton: 0, right: rightAnchor, paddingRight: 15, width: 0, height: sliderHeight)
+        
+        imageSliderPaddingTop = rufusImageView.frame.height * 0.0075
+        imageSliderPaddingBottom = rufusImageView.frame.height * 0.0075
+        
+        let model = UIDevice.current.model
+        
+        if (model != "iPhone" && model != "iPod"){
+            imageSliderPaddingTop = rufusImageView.frame.height * 0.005
+            imageSliderPaddingBottom = rufusImageView.frame.height * 0.005
+        }
+ 
+        imageSliderView.anchor(top: topAnchor, paddingTop: imageSliderPaddingTop!, left: rufusImageView.rightAnchor, paddingLeft: screenWidth * 0.03, bottom: bottomAnchor, paddingBotton: imageSliderPaddingBottom!, right: rightAnchor, paddingRight: screenWidth * 0.03, width: 0, height: 0)
         
     }
     
@@ -63,13 +73,8 @@ class HomeSliderView: UIView, UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! HomeSliderCell
         cell.flyerImageView.image = sliderImages[indexPath.item]
-        
-//        cell.isUserInteractionEnabled = true
-//        cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openUpSliders)))
-        
         return cell
     }
-
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: imageSliderView.frame.width, height: imageSliderView.frame.height)
@@ -83,7 +88,6 @@ class HomeSliderView: UIView, UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
-    
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -105,13 +109,12 @@ class HomeSliderCell: UICollectionViewCell {
     
     let flyerImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleToFill
         imageView.layer.masksToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
         return imageView
     }()
-    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -120,29 +123,16 @@ class HomeSliderCell: UICollectionViewCell {
         borderView.anchor(top: topAnchor, paddingTop: 0, left: leftAnchor, paddingLeft: 0, bottom: bottomAnchor, paddingBotton: 0, right: rightAnchor, paddingRight: 0, width: 0, height: 0)
         
         addSubview(flyerImageView)
-        flyerImageView.anchor(top: topAnchor, paddingTop: 10, left: leftAnchor, paddingLeft: 10, bottom: bottomAnchor, paddingBotton: 10, right: rightAnchor, paddingRight: 10, width: 0, height: 0)
+        flyerImageView.anchor(top: topAnchor, paddingTop: 0, left: leftAnchor, paddingLeft: 0, bottom: bottomAnchor, paddingBotton: 0, right: rightAnchor, paddingRight: 0, width: 0, height: 0)
         flyerImageView.isUserInteractionEnabled = true
         flyerImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openUpSliders)))
     }
     
     @objc func openUpSliders(){
         print(123)
-//        let openSliders = UICollectionViewController()
-//        self.present(openSliders, animated: true, completion: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
 }
-
-
-
-
-
-
-
-
-

@@ -33,10 +33,20 @@ class CalendarAddController: UIViewController {
     
     lazy var addButton: UIButton = {
         let button = UIButton()
-        button.addTarget(self, action: #selector(handleAddToNotifications), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleSave), for: .touchUpInside)
         button.backgroundColor = .ucmGold
         button.titleLabel?.textColor = .white
         button.setTitle("Add", for: .normal)
+        button.layer.cornerRadius = 10
+        return button
+    }()
+    
+    lazy var deleteButton: UIButton = {
+        let button = UIButton()
+        button.addTarget(self, action: #selector(handleDelete), for: .touchUpInside)
+        button.backgroundColor = .ucmGold
+        button.titleLabel?.textColor = .white
+        button.setTitle("Delete", for: .normal)
         button.layer.cornerRadius = 10
         return button
     }()
@@ -65,6 +75,13 @@ class CalendarAddController: UIViewController {
         textView.textAlignment = .left
         textView.isUserInteractionEnabled = false
         textView.font = UIFont.systemFont(ofSize: 20)
+        
+        let model = UIDevice.current.model
+        
+        if (model != "iPhone" && model != "iPod"){
+            textView.font = UIFont.systemFont(ofSize: 30)
+        }
+        
         return textView
     }()
     
@@ -76,9 +93,10 @@ class CalendarAddController: UIViewController {
     
     var calendarController: CalendarController?
     
+    var indexPath: IndexPath?
+    
     var calendarEvent: CalendarEvent? {
         didSet {
-           //titleLabel.text = calendarEvent?.name
             if let dayName = calendarEvent?.dayName, let monthAbbrev = calendarEvent?.monthAbbrev, let dayNumber = calendarEvent?.dayNumber, let year = calendarEvent?.year {
                 let attributedText = NSMutableAttributedString(string: "Date : ", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22), NSAttributedString.Key.foregroundColor: UIColor.white])
                 attributedText.append(NSAttributedString(string: "\(dayName), \(monthAbbrev) \(dayNumber)", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 22), NSAttributedString.Key.foregroundColor: UIColor.white]))
@@ -93,14 +111,11 @@ class CalendarAddController: UIViewController {
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupUI()
     }
-    
-    
    
 }
 

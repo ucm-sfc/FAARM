@@ -9,8 +9,7 @@
 import UIKit
 
 extension FinAidController {
-    
-    
+
     @objc func createDirectCostWorksheetButton(image: UIImage, handler: Selector  ) -> UIButton {
         let button = UIButton()
         button.setImage(image, for: .normal)
@@ -18,7 +17,7 @@ extension FinAidController {
         button.contentMode = .scaleAspectFill
         return button
     }
-    
+
     @objc func createTFButton(image: UIImage, handler: Selector  ) -> UIButton {
         let button = UIButton()
         button.setImage(image, for: .normal)
@@ -26,8 +25,7 @@ extension FinAidController {
         button.contentMode = .scaleAspectFill
         return button
     }
-    
-    
+
     @objc func createCOAButton(image: UIImage, handler: Selector  ) -> UIButton {
         let button = UIButton()
         button.setImage(image, for: .normal)
@@ -35,8 +33,7 @@ extension FinAidController {
         button.contentMode = .scaleAspectFill
         return button
     }
-    
-    
+
     @objc func createDPPButton(image: UIImage, handler: Selector  ) -> UIButton {
         let button = UIButton()
         button.setImage(image, for: .normal)
@@ -44,8 +41,7 @@ extension FinAidController {
         button.contentMode = .scaleAspectFill
         return button
     }
-    
-    
+
     @objc func createFinAidFormsButton(image: UIImage, handler: Selector  ) -> UIButton {
         let button = UIButton()
         button.setImage(image, for: .normal)
@@ -53,8 +49,7 @@ extension FinAidController {
         button.contentMode = .scaleAspectFill
         return button
     }
-    
-    
+
     @objc func createFinWebsiteButton(image: UIImage, handler: Selector  ) -> UIButton {
         let button = UIButton()
         button.setImage(image, for: .normal)
@@ -62,7 +57,7 @@ extension FinAidController {
         button.contentMode = .scaleAspectFill
         return button
     }
-    
+
     @objc func createBackButton(image: UIImage, handler: Selector ) -> UIButton {
         let button = UIButton()
         button.setImage(image, for: .normal)
@@ -70,6 +65,4 @@ extension FinAidController {
         button.contentMode = .scaleAspectFill
         return button
     }
-    
-    
 }

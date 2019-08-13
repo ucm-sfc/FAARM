@@ -12,7 +12,8 @@ extension CalendarController {
     
     /* This function gets called when a cell gets clicked on
      * We want to display the details for this cell and options
-     * to add it to our database
+     * to add it to our database, and indicate that the cell we
+     * selected is inside our notifications
      */
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let calendarAddController = CalendarAddController()
@@ -20,6 +21,8 @@ extension CalendarController {
         calendarAddController.modalTransitionStyle = .crossDissolve
         calendarAddController.calendarController = self
         calendarAddController.calendarEvent = calendarEvents[indexPath.item]
+        calendarAddController.indexPath = indexPath
+        tableView.deselectRow(at: indexPath, animated: true)
         present(calendarAddController, animated: true, completion: nil)
     }
     
@@ -31,13 +34,28 @@ extension CalendarController {
     }
     
     /* This sets which calendar event will be put in each cell
-     * which is done by using the indexPath value
+     * which is done by using the indexPath value. Also changes
+     * text color of cells only if the event is inside our notifications.
      */
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! CalendarCell
+        
         if (indexPath.item < calendarEvents.count) {
             cell.calendarEvent = calendarEvents[indexPath.item]
         }
+        
+        let prefs = UserDefaults.standard
+        let eventsArray = prefs.object(forKey: "subbedEvents") as? [String] ?? [String]()
+        
+        let string = cell.titleLabel.text!.uppercased().filter("ABCDEFGHIJKLKMNOPQRSTUVWXYZ1234567890 ".contains).replacingOccurrences(of: " ", with: "_", options: .literal, range: nil)
+        
+        if (!eventsArray.isEmpty && eventsArray.contains(string)) {
+            cell.titleLabel.textColor = UIColor(red:1.00, green:0.90, blue:0.32, alpha:1.0)
+        }
+        else{
+            cell.titleLabel.textColor = UIColor.white
+        }
+        
         return cell
     }
     
@@ -54,7 +72,6 @@ extension CalendarController {
     // Create the header for the section
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label = IndentedLabel()
-        //label.text = "Upcoming Deadlines"
         label.backgroundColor = .ucmGold
         label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: 16)
@@ -75,13 +92,18 @@ extension CalendarController {
         label.textColor = .white
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 22)
+        
+        let model = UIDevice.current.model
+        
+        if (model != "iPhone" && model != "iPod"){
+            label.font = UIFont.boldSystemFont(ofSize: 28)
+        }
+        
         return label
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return calendarEvents.count == 0 ? 150 : 0
     }
-    
-   
     
 }

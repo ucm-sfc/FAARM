@@ -22,6 +22,4 @@ extension TFController {
         button.tintColor = .white
         return button
     }
-    
-    
 }
