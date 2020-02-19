@@ -25,6 +25,7 @@ struct CalendarEvent {
     var year: String?
     var description: String?
     var timeInterval: Int?
+    var id: String?
     
     init() {
         self.name = ""
@@ -33,6 +34,7 @@ struct CalendarEvent {
         self.dayName = ""
         self.year = ""
         self.timeInterval = -1
+        self.id = ""
     }
     
     init(dictionary: [String: Any]) {

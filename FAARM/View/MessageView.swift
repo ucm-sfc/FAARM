@@ -116,7 +116,7 @@ class MessageView: UICollectionViewCell, UIPickerViewDelegate, UIPickerViewDataS
     lazy var submitButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Submit", for: .normal)
-        button.backgroundColor = .gray
+        button.backgroundColor = UIColor.rgb(red: 0, green: 147, blue: 178)
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 5
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)

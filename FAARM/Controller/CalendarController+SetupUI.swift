@@ -20,6 +20,9 @@ extension CalendarController {
         view.backgroundColor = .ucmBlue
         let customNavigationBar = setupNavBar(imageForLogo: #imageLiteral(resourceName: "Calendar Tab-1"), viewForAnchor: view)
         
+        customNavigationBar.logoImageView.adjustsImageWhenDisabled = false
+        customNavigationBar.logoImageView.isEnabled = false
+        
         // Acts as a background for status bar and so text doesnt peek through
         view.addSubview(returnButton)
         returnButton.anchor(top: customNavigationBar.bottomAnchor, paddingTop: 0, left: view.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: nil, paddingRight: 0, width: 75, height: 75)

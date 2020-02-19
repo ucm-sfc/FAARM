@@ -24,14 +24,12 @@ extension CalendarAddController {
         detailsView.addSubview(buttonsStackView)
         
         let prefs = UserDefaults.standard
-        var eventsArray = prefs.object(forKey: "subbedEvents") as? [String] ?? [String]()
+        let eventsArray = prefs.object(forKey: "subbedEvents") as? [String] ?? [String]()
         
         var isSubbed = false
         
-        let string = descriptionTextView.text.uppercased().filter("ABCDEFGHIJKLKMNOPQRSTUVWXYZ1234567890 ".contains).replacingOccurrences(of: " ", with: "_", options: .literal, range: nil)
-        
         for i in 0 ..< eventsArray.count{
-            if (eventsArray[i] == string){
+            if (eventsArray[i] == id!){
                 isSubbed = true
                 break
             }

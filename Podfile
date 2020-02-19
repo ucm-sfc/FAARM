@@ -9,6 +9,6 @@ pod 'Firebase/Database'
 pod 'Firebase/Messaging'
 pod 'Alamofire', '~> 4.7'
 pod "AlamofireRSSParser"
-pod 'MSAL'
+pod 'Firebase/Storage'
     
 end

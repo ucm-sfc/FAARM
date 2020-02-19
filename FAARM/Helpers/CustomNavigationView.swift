@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import SafariServices
 
 class CustomNavigationView: UIView {
 
-    let logoImageView: UIImageView = {
-        let imageView = UIImageView(image: #imageLiteral(resourceName: "SFC-NAV-LOGO") )
+    lazy var logoImageView: UIButton = {
+        let imageView = UIButton()
+        imageView.setImage(#imageLiteral(resourceName: "SFC-NAV-LOGO"), for: .normal)
         imageView.contentMode = .scaleToFill
         return imageView
     }()
@@ -31,8 +33,6 @@ class CustomNavigationView: UIView {
         let miniNavBarheight = view.frame.width * 0.145 //0.145
         self.anchor(top: view.safeAreaLayoutGuide.topAnchor, paddingTop: 0, left: view.safeAreaLayoutGuide.leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: view.safeAreaLayoutGuide.rightAnchor, paddingRight: 0, width: 0, height: miniNavBarheight)
     }
-    
-    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

@@ -90,6 +90,7 @@ class CalendarAddController: UIViewController {
     var dayNumber: String?
     var dayName: String?
     var year: String?
+    var id: String?
     
     var calendarController: CalendarController?
     
@@ -101,10 +102,14 @@ class CalendarAddController: UIViewController {
                 let attributedText = NSMutableAttributedString(string: "Date : ", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22), NSAttributedString.Key.foregroundColor: UIColor.white])
                 attributedText.append(NSAttributedString(string: "\(dayName), \(monthAbbrev) \(dayNumber)", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 22), NSAttributedString.Key.foregroundColor: UIColor.white]))
                 dateLabel.attributedText = attributedText
+                
+                let idString = calendarEvent?.id
+                
                 self.monthAbbrev = monthAbbrev
                 self.dayNumber = dayNumber
                 self.dayName = dayName
                 self.year = year
+                self.id = idString
             }
             descriptionTextView.text = calendarEvent?.name
             timeInterval = calendarEvent?.timeInterval

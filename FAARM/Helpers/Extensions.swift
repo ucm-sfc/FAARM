@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import MessageUI
 
 extension UIColor {
     
-    static let ucmBlue = UIColor.rgb(red: 9, green: 47, blue: 68)
-    static let ucmGold = UIColor.rgb(red: 162, green: 144, blue: 98)
+    static let ucmBlue = UIColor.rgb(red: 0, green: 40, blue: 85)
+    static let ucmGold = UIColor.rgb(red: 218, green: 170, blue: 0)
     
     // custom function to make creating custom colors easier
     static func rgb(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
@@ -68,7 +69,7 @@ extension UIViewController {
     func setupNavBar(imageForLogo: UIImage, viewForAnchor: UIView) -> CustomNavigationView {
     
         let customMiniNavBar = CustomNavigationView()
-        customMiniNavBar.logoImageView.image = imageForLogo
+        customMiniNavBar.logoImageView.setImage(imageForLogo, for: .normal)
         view.addSubview(customMiniNavBar)
         customMiniNavBar.anchorMiniNavBar(view: viewForAnchor)
         
@@ -84,12 +85,12 @@ extension UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
-    
+    /*
     func presentRequiredLogin(){
         let loginController = LoginController()
         present(loginController, animated: true, completion: nil)
     }
-    
+    */
     func formatDateObj(startDict: NSDictionary, dateFormatter: DateFormatter) -> [String] {
         
         var dateObject = Date()
@@ -119,4 +120,31 @@ extension UIViewController {
     }
     
     
+}
+
+extension UIViewController: MFMailComposeViewControllerDelegate {
+    
+    public func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        
+        if let _ = error {
+            //Show error alert
+            controller.dismiss(animated: true)
+            return
+        }
+        
+        switch result {
+        case .cancelled:
+            print("Cancelled")
+        case .failed:
+            print("Failed to send")
+        case .saved:
+            print("Saved")
+        case .sent:
+            print("Email Sent")
+        @unknown default:
+            break
+        }
+        
+        controller.dismiss(animated: true)
+    }
 }

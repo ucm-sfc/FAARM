@@ -17,8 +17,11 @@ extension FinAidController {
         UniversityImageView.anchor(top: nil, paddingTop: 0, left: view.leftAnchor, paddingLeft: 0, bottom: view.bottomAnchor, paddingBotton: 0, right: view.rightAnchor, paddingRight: 0, width: view.frame.width, height: view.frame.height)
         
         let customNavigationBar = CustomNavigationView()
-        //customNavigationBar.logoImageView.contentMode = .scaleAspectFit
-        customNavigationBar.logoImageView.image = #imageLiteral(resourceName: "FinAidTitle")
+        
+        customNavigationBar.logoImageView.setImage(#imageLiteral(resourceName: "FinAidTitle"), for: .normal)
+        customNavigationBar.logoImageView.adjustsImageWhenDisabled = false
+        customNavigationBar.logoImageView.isEnabled = false
+        
         collectionView.addSubview(customNavigationBar)
         customNavigationBar.anchorMiniNavBar(view: view)
         

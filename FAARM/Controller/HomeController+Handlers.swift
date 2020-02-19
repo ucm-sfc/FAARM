@@ -18,11 +18,11 @@ extension HomeController {
         case 0:
             handleFinAid()
         case 1:
-            handleAdmissions()
+            handleVideos()
         case 2:
             handleRegistrar()
         case 3:
-            handleNotifications()
+            handleMaps()
         case 4:
             handleCalendar()
         case 5:
@@ -38,16 +38,23 @@ extension HomeController {
         self.present(checkInLink, animated: true, completion: nil)
     }
     
-    func handleNotifications() {
-        
+    func handleMaps() {
         let maps = SFSafariViewController(url: NSURL(string: "https://www.ucmerced.edu/maps")! as URL)
         self.present(maps, animated: true, completion: nil)
-       
     }
     
     func handleCalendar() {
-        let calendarController = CalendarController()
-        present(calendarController, animated: true, completion: nil)
+        
+        if(CheckInternet.Connection()){
+            let calendarController = CalendarController()
+            present(calendarController, animated: true, completion: nil)
+        }
+        else{
+            let successAlertController = UIAlertController(title: "Connect to Wi-Fi", message: "Please connect your device to your\nWi-Fi network to view the calendar.", preferredStyle: .alert)
+            successAlertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (alert) in }))
+            self.present(successAlertController, animated: true, completion: nil)
+        }
+        
     }
     
     func handleContact() {
@@ -62,12 +69,18 @@ extension HomeController {
      This function pulls up the Contact form
      where the user fills out a form regarding their question
      and the SFC will receive this information.
-    */
+    
     
     func handleMessageForm() {
         let layout = UICollectionViewFlowLayout()
         let messageController = MessageController(collectionViewLayout: layout)
         present(messageController, animated: true, completion: nil)
+    }
+    */
+    
+    func handleMeetStaff() {
+        let meetStaff = SFSafariViewController(url: NSURL(string: "https://studentsfirst.ucmerced.edu/staff")! as URL)
+        self.present(meetStaff, animated: true, completion: nil)
     }
     
     func handleFinAid() {
@@ -76,10 +89,10 @@ extension HomeController {
         present(finAidController, animated: true, completion: nil)
     }
     
-    func handleAdmissions() {
+    func handleVideos() {
         let layout = UICollectionViewFlowLayout()
-        let admissionsController = AdmissionsController(collectionViewLayout: layout)
-        present(admissionsController, animated: true, completion: nil)
+        let videosController = VideosController(collectionViewLayout: layout)
+        present(videosController, animated: true, completion: nil)
     }
     
     func handleRegistrar() {

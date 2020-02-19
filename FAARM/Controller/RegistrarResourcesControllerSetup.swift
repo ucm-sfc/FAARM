@@ -13,7 +13,10 @@ extension RegistrarResourcesController {
     func setupUI() {
         
         let customNavigationBar = CustomNavigationView()
-        customNavigationBar.logoImageView.image = #imageLiteral(resourceName: "Registrar Title-1")
+        customNavigationBar.logoImageView.setImage(#imageLiteral(resourceName: "Registrar Title-1"), for: .normal)
+        customNavigationBar.logoImageView.adjustsImageWhenDisabled = false
+        customNavigationBar.logoImageView.isEnabled = false
+        
         collectionView.addSubview(customNavigationBar)
         customNavigationBar.anchorMiniNavBar(view: view)
 

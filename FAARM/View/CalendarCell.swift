@@ -127,10 +127,10 @@ class CalendarCell: UITableViewCell {
         addSubview(dateLabel)
         let numberHeight = frame.height * 0.7
         let numberDayWidth = frame.width * 0.33
-        dateLabel.anchor(top: topAnchor, paddingTop: 10, left: leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: nil, paddingRight: 0, width: numberDayWidth, height: numberHeight)
+        dateLabel.anchor(top: topAnchor, paddingTop: 5, left: leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: nil, paddingRight: 0, width: numberDayWidth, height: numberHeight)
         
         addSubview(dayNameLabel)
-        dayNameLabel.anchor(top: dateLabel.bottomAnchor, paddingTop: 0, left: leftAnchor, paddingLeft: 0, bottom: bottomAnchor, paddingBotton: 10, right: dateLabel.rightAnchor, paddingRight: 0, width: 0, height: 0)
+        dayNameLabel.anchor(top: dateLabel.bottomAnchor, paddingTop: 0, left: leftAnchor, paddingLeft: 0, bottom: bottomAnchor, paddingBotton: 5, right: dateLabel.rightAnchor, paddingRight: 0, width: 0, height: 0)
         
         addSubview(goldMiddleDividerView)
         goldMiddleDividerView.anchor(top: topAnchor, paddingTop: 0, left: dayNameLabel.rightAnchor, paddingLeft: 0, bottom: bottomAnchor, paddingBotton: 0, right: nil, paddingRight: 0, width: 2, height: 0)

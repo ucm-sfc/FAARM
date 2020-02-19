@@ -47,9 +47,7 @@ extension CalendarController {
         let prefs = UserDefaults.standard
         let eventsArray = prefs.object(forKey: "subbedEvents") as? [String] ?? [String]()
         
-        let string = cell.titleLabel.text!.uppercased().filter("ABCDEFGHIJKLKMNOPQRSTUVWXYZ1234567890 ".contains).replacingOccurrences(of: " ", with: "_", options: .literal, range: nil)
-        
-        if (!eventsArray.isEmpty && eventsArray.contains(string)) {
+        if (!eventsArray.isEmpty && eventsArray.contains((cell.calendarEvent?.id!)!)) {
             cell.titleLabel.textColor = UIColor(red:1.00, green:0.90, blue:0.32, alpha:1.0)
         }
         else{

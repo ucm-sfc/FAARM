@@ -14,31 +14,14 @@
 		1A6A225E21E66C5800C0A64B /* RegistrarResourcesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A225D21E66C5800C0A64B /* RegistrarResourcesController.swift */; };
 		1A6A226021E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A225F21E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift */; };
 		1A6A226221E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A226121E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift */; };
-		1AF43FE22231D45C009D2CFE /* TFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF43FE12231D45C009D2CFE /* TFController.swift */; };
-		1AF43FE42231D7A6009D2CFE /* TFControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF43FE32231D7A6009D2CFE /* TFControllerSetup.swift */; };
-		1AF43FE62231DA40009D2CFE /* TFControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF43FE52231DA40009D2CFE /* TFControllerHelper.swift */; };
 		5640ED022087384800BE1FB1 /* CalendarController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5640ED012087384800BE1FB1 /* CalendarController+TableView.swift */; };
 		5640ED0520873CB900BE1FB1 /* CalendarAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5640ED0420873CB900BE1FB1 /* CalendarAddController.swift */; };
 		564F557D20853BC00060E974 /* CalendarController+getJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F557C20853BC00060E974 /* CalendarController+getJSON.swift */; };
-		564F557F208598ED0060E974 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F557E208598ED0060E974 /* MessageController.swift */; };
-		564F558120859AF10060E974 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F558020859AF10060E974 /* MessageView.swift */; };
-		564F558320859FD20060E974 /* UserInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F558220859FD20060E974 /* UserInputView.swift */; };
 		5655CB8A20798C81000599E5 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5655CB8920798C81000599E5 /* CalendarController.swift */; };
 		56855358207DABB600170885 /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56855357207DABB500170885 /* CalendarEvent.swift */; };
 		5685CDF520A2B56B00E4FCD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5685CDF420A2B56B00E4FCD1 /* GoogleService-Info.plist */; };
-		5685CDF820A2C19100E4FCD1 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5685CDF720A2C19100E4FCD1 /* RegisterController.swift */; };
-		5685CDFA20A2C1A300E4FCD1 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5685CDF920A2C1A300E4FCD1 /* LoginController.swift */; };
-		5685CDFF20A3E29300E4FCD1 /* RssParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5685CDFE20A3E29300E4FCD1 /* RssParser.swift */; };
-		5685CE0220A3EF4000E4FCD1 /* FinAidFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5685CE0120A3EF4000E4FCD1 /* FinAidFormController.swift */; };
 		5685CE0420A3F5B200E4FCD1 /* CalendarController+SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5685CE0320A3F5B200E4FCD1 /* CalendarController+SetupUI.swift */; };
 		5685CE0620A3F60800E4FCD1 /* CalendarAddController+Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5685CE0520A3F60800E4FCD1 /* CalendarAddController+Handlers.swift */; };
-		5685CE0920A3F66D00E4FCD1 /* NotificationsController+SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5685CE0820A3F66D00E4FCD1 /* NotificationsController+SetupUI.swift */; };
-		5685CE0B20A3F67D00E4FCD1 /* NotificationsController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5685CE0A20A3F67D00E4FCD1 /* NotificationsController+UITableView.swift */; };
-		5685CE0E20A3F74E00E4FCD1 /* NotificationsDeleteController+SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5685CE0D20A3F74E00E4FCD1 /* NotificationsDeleteController+SetupUI.swift */; };
-		5685CE1020A3F75E00E4FCD1 /* NotificationsDeleteController+Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5685CE0F20A3F75E00E4FCD1 /* NotificationsDeleteController+Handlers.swift */; };
-		5685CE1420A3F85300E4FCD1 /* RegisterController+SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5685CE1320A3F85300E4FCD1 /* RegisterController+SetupUI.swift */; };
-		5685CE1620A3F86700E4FCD1 /* RegisterController+Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5685CE1520A3F86700E4FCD1 /* RegisterController+Handlers.swift */; };
-		5685CE1820A3F91800E4FCD1 /* LoginController+SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5685CE1720A3F91800E4FCD1 /* LoginController+SetupUI.swift */; };
 		569C30D02059F79B00C1A19D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C30CF2059F79B00C1A19D /* Extensions.swift */; };
 		569C30D4205B9B1F00C1A19D /* HomeBodyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C30D3205B9B1F00C1A19D /* HomeBodyCell.swift */; };
 		569C30D82061639F00C1A19D /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C30D72061639F00C1A19D /* CustomNavigationView.swift */; };
@@ -50,15 +33,9 @@
 		569C30E8206E017800C1A19D /* HomeController+Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C30E7206E017800C1A19D /* HomeController+Handlers.swift */; };
 		56AE581E208EFB93002F3C51 /* CalendarAddController+SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE581D208EFB92002F3C51 /* CalendarAddController+SetupUI.swift */; };
 		56AE5821208F1CF4002F3C51 /* FAARMDataModels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56AE581F208F1CF4002F3C51 /* FAARMDataModels.xcdatamodeld */; };
-		56AE5827208F1FF1002F3C51 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE5826208F1FF1002F3C51 /* NotificationsController.swift */; };
-		56AE5838208FB9B0002F3C51 /* AdmissionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE5834208FB9B0002F3C51 /* AdmissionsController.swift */; };
-		56AE5839208FB9B0002F3C51 /* AdmissionsControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE5836208FB9B0002F3C51 /* AdmissionsControllerSetup.swift */; };
-		56AE583A208FB9B0002F3C51 /* AdmissionsControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE5837208FB9B0002F3C51 /* AdmissionsControllerHelper.swift */; };
 		56AE584020901612002F3C51 /* FinAidControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE583D20901611002F3C51 /* FinAidControllerHelper.swift */; };
 		56AE584120901612002F3C51 /* FinAidControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE583E20901611002F3C51 /* FinAidControllerSetup.swift */; };
 		56AE584220901612002F3C51 /* FinAidController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE583F20901611002F3C51 /* FinAidController.swift */; };
-		56AE584C20907D31002F3C51 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE584B20907D31002F3C51 /* CoreDataManager.swift */; };
-		56AE584E209162BF002F3C51 /* NotificationsDeleteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE584D209162BF002F3C51 /* NotificationsDeleteController.swift */; };
 		56B06CAF2094632800B524AF /* RegistrarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B06CAB2094632800B524AF /* RegistrarController.swift */; };
 		56B06CB02094632800B524AF /* RegistrarControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B06CAD2094632800B524AF /* RegistrarControllerSetup.swift */; };
 		56B06CB12094632800B524AF /* RegistrarControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B06CAE2094632800B524AF /* RegistrarControllerHelper.swift */; };
@@ -69,6 +46,10 @@
 		56E4C8112080865A00ECEE9A /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E4C8102080865A00ECEE9A /* CalendarCell.swift */; };
 		C8942F83E724D0F9F6BBAEA3 /* Pods_FAARM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A6B0F7ADB10BC1F6E988DB /* Pods_FAARM.framework */; };
 		CE6656FB22778CC300151630 /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6656FA22778CC300151630 /* CheckInternet.swift */; };
+		CEAD42E023E3630900AE815B /* VideosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAD42DE23E3630900AE815B /* VideosController.swift */; };
+		CEAD42E123E3630900AE815B /* VideosControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAD42DF23E3630900AE815B /* VideosControllerSetup.swift */; };
+		CEAD42E323E3632200AE815B /* VideosControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAD42E223E3632200AE815B /* VideosControllerHelper.swift */; };
+		CEC3C0FC23BDB28100D6DD3F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC3C0FA23BDB28100D6DD3F /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,33 +73,16 @@
 		1A6A225D21E66C5800C0A64B /* RegistrarResourcesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarResourcesController.swift; sourceTree = "<group>"; };
 		1A6A225F21E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarResourcesControllerSetup.swift; sourceTree = "<group>"; };
 		1A6A226121E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarResourcesControllerHelper.swift; sourceTree = "<group>"; };
-		1AF43FE12231D45C009D2CFE /* TFController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFController.swift; sourceTree = "<group>"; };
-		1AF43FE32231D7A6009D2CFE /* TFControllerSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFControllerSetup.swift; sourceTree = "<group>"; };
-		1AF43FE52231DA40009D2CFE /* TFControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFControllerHelper.swift; sourceTree = "<group>"; };
 		36A6B0F7ADB10BC1F6E988DB /* Pods_FAARM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FAARM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5638D1972093E0C5008D0757 /* FAARM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FAARM.entitlements; sourceTree = "<group>"; };
 		5640ED012087384800BE1FB1 /* CalendarController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalendarController+TableView.swift"; sourceTree = "<group>"; };
 		5640ED0420873CB900BE1FB1 /* CalendarAddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarAddController.swift; sourceTree = "<group>"; };
 		564F557C20853BC00060E974 /* CalendarController+getJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalendarController+getJSON.swift"; sourceTree = "<group>"; };
-		564F557E208598ED0060E974 /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
-		564F558020859AF10060E974 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
-		564F558220859FD20060E974 /* UserInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputView.swift; sourceTree = "<group>"; };
 		5655CB8920798C81000599E5 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		56855357207DABB500170885 /* CalendarEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
 		5685CDF420A2B56B00E4FCD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5685CDF720A2C19100E4FCD1 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
-		5685CDF920A2C1A300E4FCD1 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		5685CDFE20A3E29300E4FCD1 /* RssParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RssParser.swift; sourceTree = "<group>"; };
-		5685CE0120A3EF4000E4FCD1 /* FinAidFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinAidFormController.swift; sourceTree = "<group>"; };
 		5685CE0320A3F5B200E4FCD1 /* CalendarController+SetupUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalendarController+SetupUI.swift"; sourceTree = "<group>"; };
 		5685CE0520A3F60800E4FCD1 /* CalendarAddController+Handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalendarAddController+Handlers.swift"; sourceTree = "<group>"; };
-		5685CE0820A3F66D00E4FCD1 /* NotificationsController+SetupUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationsController+SetupUI.swift"; sourceTree = "<group>"; };
-		5685CE0A20A3F67D00E4FCD1 /* NotificationsController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationsController+UITableView.swift"; sourceTree = "<group>"; };
-		5685CE0D20A3F74E00E4FCD1 /* NotificationsDeleteController+SetupUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationsDeleteController+SetupUI.swift"; sourceTree = "<group>"; };
-		5685CE0F20A3F75E00E4FCD1 /* NotificationsDeleteController+Handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationsDeleteController+Handlers.swift"; sourceTree = "<group>"; };
-		5685CE1320A3F85300E4FCD1 /* RegisterController+SetupUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterController+SetupUI.swift"; sourceTree = "<group>"; };
-		5685CE1520A3F86700E4FCD1 /* RegisterController+Handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterController+Handlers.swift"; sourceTree = "<group>"; };
-		5685CE1720A3F91800E4FCD1 /* LoginController+SetupUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginController+SetupUI.swift"; sourceTree = "<group>"; };
 		569C30CF2059F79B00C1A19D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		569C30D3205B9B1F00C1A19D /* HomeBodyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBodyCell.swift; sourceTree = "<group>"; };
 		569C30D72061639F00C1A19D /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
@@ -130,15 +94,9 @@
 		569C30E7206E017800C1A19D /* HomeController+Handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeController+Handlers.swift"; sourceTree = "<group>"; };
 		56AE581D208EFB92002F3C51 /* CalendarAddController+SetupUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalendarAddController+SetupUI.swift"; sourceTree = "<group>"; };
 		56AE5820208F1CF4002F3C51 /* FAARMDataModels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FAARMDataModels.xcdatamodel; sourceTree = "<group>"; };
-		56AE5826208F1FF1002F3C51 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
-		56AE5834208FB9B0002F3C51 /* AdmissionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmissionsController.swift; sourceTree = "<group>"; };
-		56AE5836208FB9B0002F3C51 /* AdmissionsControllerSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmissionsControllerSetup.swift; sourceTree = "<group>"; };
-		56AE5837208FB9B0002F3C51 /* AdmissionsControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmissionsControllerHelper.swift; sourceTree = "<group>"; };
 		56AE583D20901611002F3C51 /* FinAidControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinAidControllerHelper.swift; sourceTree = "<group>"; };
 		56AE583E20901611002F3C51 /* FinAidControllerSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinAidControllerSetup.swift; sourceTree = "<group>"; };
 		56AE583F20901611002F3C51 /* FinAidController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinAidController.swift; sourceTree = "<group>"; };
-		56AE584B20907D31002F3C51 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		56AE584D209162BF002F3C51 /* NotificationsDeleteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsDeleteController.swift; sourceTree = "<group>"; };
 		56B06CAB2094632800B524AF /* RegistrarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrarController.swift; sourceTree = "<group>"; };
 		56B06CAD2094632800B524AF /* RegistrarControllerSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrarControllerSetup.swift; sourceTree = "<group>"; };
 		56B06CAE2094632800B524AF /* RegistrarControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrarControllerHelper.swift; sourceTree = "<group>"; };
@@ -151,6 +109,10 @@
 		56E4C8102080865A00ECEE9A /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		8A6DEB31DF327959B1C80A1C /* Pods-FAARM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FAARM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FAARM/Pods-FAARM.debug.xcconfig"; sourceTree = "<group>"; };
 		CE6656FA22778CC300151630 /* CheckInternet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
+		CEAD42DE23E3630900AE815B /* VideosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosController.swift; sourceTree = "<group>"; };
+		CEAD42DF23E3630900AE815B /* VideosControllerSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosControllerSetup.swift; sourceTree = "<group>"; };
+		CEAD42E223E3632200AE815B /* VideosControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosControllerHelper.swift; sourceTree = "<group>"; };
+		CEC3C0FB23BDB28100D6DD3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EB334C5E643119E0D84AC147 /* Pods-FAARM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FAARM.release.xcconfig"; path = "Pods/Target Support Files/Pods-FAARM/Pods-FAARM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,18 +131,15 @@
 		5685CDFB20A2D0CB00E4FCD1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				56AE5837208FB9B0002F3C51 /* AdmissionsControllerHelper.swift */,
+				CEAD42E223E3632200AE815B /* VideosControllerHelper.swift */,
 				CE6656FA22778CC300151630 /* CheckInternet.swift */,
 				569C30E3206DB59B00C1A19D /* ContactControllerHelpers.swift */,
-				56AE584B20907D31002F3C51 /* CoreDataManager.swift */,
 				569C30D72061639F00C1A19D /* CustomNavigationView.swift */,
 				569C30CF2059F79B00C1A19D /* Extensions.swift */,
 				1A323DA921F29AC8004298C8 /* FATVControllerHelper.swift */,
 				56AE583D20901611002F3C51 /* FinAidControllerHelper.swift */,
 				56B06CAE2094632800B524AF /* RegistrarControllerHelper.swift */,
 				1A6A226121E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift */,
-				5685CDFE20A3E29300E4FCD1 /* RssParser.swift */,
-				1AF43FE52231DA40009D2CFE /* TFControllerHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -200,8 +159,6 @@
 				569C30D3205B9B1F00C1A19D /* HomeBodyCell.swift */,
 				1A17767E217E54A000483467 /* HomeHeaderCell2.swift */,
 				569C30DD206C49BE00C1A19D /* HomeSliderView.swift */,
-				564F558020859AF10060E974 /* MessageView.swift */,
-				564F558220859FD20060E974 /* UserInputView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,8 +166,6 @@
 		5698201420C24C2E00643FF2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				56AE5834208FB9B0002F3C51 /* AdmissionsController.swift */,
-				56AE5836208FB9B0002F3C51 /* AdmissionsControllerSetup.swift */,
 				5640ED0420873CB900BE1FB1 /* CalendarAddController.swift */,
 				5685CE0520A3F60800E4FCD1 /* CalendarAddController+Handlers.swift */,
 				56AE581D208EFB92002F3C51 /* CalendarAddController+SetupUI.swift */,
@@ -224,28 +179,15 @@
 				1A323DA721F29A5F004298C8 /* FATVControllerSetup.swift */,
 				56AE583F20901611002F3C51 /* FinAidController.swift */,
 				56AE583E20901611002F3C51 /* FinAidControllerSetup.swift */,
-				5685CE0120A3EF4000E4FCD1 /* FinAidFormController.swift */,
 				56B5D4ED2059DADB00381FF6 /* HomeController.swift */,
 				569C30DA2061724500C1A19D /* HomeController+BuildCollectionView.swift */,
 				569C30E7206E017800C1A19D /* HomeController+Handlers.swift */,
-				5685CDF920A2C1A300E4FCD1 /* LoginController.swift */,
-				5685CE1720A3F91800E4FCD1 /* LoginController+SetupUI.swift */,
-				564F557E208598ED0060E974 /* MessageController.swift */,
-				56AE5826208F1FF1002F3C51 /* NotificationsController.swift */,
-				5685CE0820A3F66D00E4FCD1 /* NotificationsController+SetupUI.swift */,
-				5685CE0A20A3F67D00E4FCD1 /* NotificationsController+UITableView.swift */,
-				56AE584D209162BF002F3C51 /* NotificationsDeleteController.swift */,
-				5685CE0F20A3F75E00E4FCD1 /* NotificationsDeleteController+Handlers.swift */,
-				5685CE0D20A3F74E00E4FCD1 /* NotificationsDeleteController+SetupUI.swift */,
-				5685CDF720A2C19100E4FCD1 /* RegisterController.swift */,
-				5685CE1520A3F86700E4FCD1 /* RegisterController+Handlers.swift */,
-				5685CE1320A3F85300E4FCD1 /* RegisterController+SetupUI.swift */,
 				56B06CAB2094632800B524AF /* RegistrarController.swift */,
 				56B06CAD2094632800B524AF /* RegistrarControllerSetup.swift */,
 				1A6A225D21E66C5800C0A64B /* RegistrarResourcesController.swift */,
 				1A6A225F21E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift */,
-				1AF43FE12231D45C009D2CFE /* TFController.swift */,
-				1AF43FE32231D7A6009D2CFE /* TFControllerSetup.swift */,
+				CEAD42DE23E3630900AE815B /* VideosController.swift */,
+				CEAD42DF23E3630900AE815B /* VideosControllerSetup.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -271,6 +213,7 @@
 		56B5D4EA2059DADB00381FF6 /* FAARM */ = {
 			isa = PBXGroup;
 			children = (
+				CEC3C0FA23BDB28100D6DD3F /* LaunchScreen.xib */,
 				5638D1972093E0C5008D0757 /* FAARM.entitlements */,
 				56B5D4EB2059DADB00381FF6 /* AppDelegate.swift */,
 				5698201220C24C2600643FF2 /* Model */,
@@ -339,7 +282,7 @@
 				TargetAttributes = {
 					56B5D4E72059DADB00381FF6 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -378,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC3C0FC23BDB28100D6DD3F /* LaunchScreen.xib in Resources */,
 				5685CDF520A2B56B00E4FCD1 /* GoogleService-Info.plist in Resources */,
 				56B5D4F32059DADB00381FF6 /* Assets.xcassets in Resources */,
 				56B5D4F12059DADB00381FF6 /* Main.storyboard in Resources */,
@@ -408,12 +352,12 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FAARM/Pods-FAARM-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-FAARM/Pods-FAARM-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireRSSParser/AlamofireRSSParser.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -422,14 +366,14 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireRSSParser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FAARM/Pods-FAARM-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FAARM/Pods-FAARM-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A7EEBD352D2230BCD371FE7D /* [CP] Check Pods Manifest.lock */ = {
@@ -458,63 +402,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				5640ED0520873CB900BE1FB1 /* CalendarAddController.swift in Sources */,
-				564F558120859AF10060E974 /* MessageView.swift in Sources */,
 				5655CB8A20798C81000599E5 /* CalendarController.swift in Sources */,
-				56AE584C20907D31002F3C51 /* CoreDataManager.swift in Sources */,
 				5640ED022087384800BE1FB1 /* CalendarController+TableView.swift in Sources */,
-				56AE584E209162BF002F3C51 /* NotificationsDeleteController.swift in Sources */,
 				564F557D20853BC00060E974 /* CalendarController+getJSON.swift in Sources */,
 				1A6A226021E66CC100C0A64B /* RegistrarResourcesControllerSetup.swift in Sources */,
 				1A323DAA21F29AC8004298C8 /* FATVControllerHelper.swift in Sources */,
-				1AF43FE42231D7A6009D2CFE /* TFControllerSetup.swift in Sources */,
-				56AE5838208FB9B0002F3C51 /* AdmissionsController.swift in Sources */,
-				5685CDF820A2C19100E4FCD1 /* RegisterController.swift in Sources */,
 				5685CE0620A3F60800E4FCD1 /* CalendarAddController+Handlers.swift in Sources */,
 				56AE5821208F1CF4002F3C51 /* FAARMDataModels.xcdatamodeld in Sources */,
 				569C30DE206C49BE00C1A19D /* HomeSliderView.swift in Sources */,
-				564F558320859FD20060E974 /* UserInputView.swift in Sources */,
-				5685CE1020A3F75E00E4FCD1 /* NotificationsDeleteController+Handlers.swift in Sources */,
 				56B06CB02094632800B524AF /* RegistrarControllerSetup.swift in Sources */,
 				56AE584120901612002F3C51 /* FinAidControllerSetup.swift in Sources */,
 				56B06CAF2094632800B524AF /* RegistrarController.swift in Sources */,
 				569C30D4205B9B1F00C1A19D /* HomeBodyCell.swift in Sources */,
+				CEAD42E123E3630900AE815B /* VideosControllerSetup.swift in Sources */,
 				56AE584020901612002F3C51 /* FinAidControllerHelper.swift in Sources */,
 				56B5D4EE2059DADB00381FF6 /* HomeController.swift in Sources */,
 				56855358207DABB600170885 /* CalendarEvent.swift in Sources */,
 				56B06CB12094632800B524AF /* RegistrarControllerHelper.swift in Sources */,
-				1AF43FE62231DA40009D2CFE /* TFControllerHelper.swift in Sources */,
-				56AE5839208FB9B0002F3C51 /* AdmissionsControllerSetup.swift in Sources */,
 				5685CE0420A3F5B200E4FCD1 /* CalendarController+SetupUI.swift in Sources */,
-				5685CE0920A3F66D00E4FCD1 /* NotificationsController+SetupUI.swift in Sources */,
 				569C30E6206DB7FF00C1A19D /* ContactController+SetupUI.swift in Sources */,
-				56AE5827208F1FF1002F3C51 /* NotificationsController.swift in Sources */,
 				1A6A225E21E66C5800C0A64B /* RegistrarResourcesController.swift in Sources */,
 				569C30DB2061724500C1A19D /* HomeController+BuildCollectionView.swift in Sources */,
-				56AE583A208FB9B0002F3C51 /* AdmissionsControllerHelper.swift in Sources */,
 				569C30D82061639F00C1A19D /* CustomNavigationView.swift in Sources */,
-				5685CE1820A3F91800E4FCD1 /* LoginController+SetupUI.swift in Sources */,
-				5685CE0220A3EF4000E4FCD1 /* FinAidFormController.swift in Sources */,
-				5685CDFF20A3E29300E4FCD1 /* RssParser.swift in Sources */,
-				1AF43FE22231D45C009D2CFE /* TFController.swift in Sources */,
 				569C30E4206DB59B00C1A19D /* ContactControllerHelpers.swift in Sources */,
 				56AE584220901612002F3C51 /* FinAidController.swift in Sources */,
-				5685CE0B20A3F67D00E4FCD1 /* NotificationsController+UITableView.swift in Sources */,
 				569C30E1206DB50600C1A19D /* ContactController.swift in Sources */,
 				CE6656FB22778CC300151630 /* CheckInternet.swift in Sources */,
 				56E4C8112080865A00ECEE9A /* CalendarCell.swift in Sources */,
-				5685CE1420A3F85300E4FCD1 /* RegisterController+SetupUI.swift in Sources */,
-				5685CE0E20A3F74E00E4FCD1 /* NotificationsDeleteController+SetupUI.swift in Sources */,
-				564F557F208598ED0060E974 /* MessageController.swift in Sources */,
 				569C30D02059F79B00C1A19D /* Extensions.swift in Sources */,
+				CEAD42E323E3632200AE815B /* VideosControllerHelper.swift in Sources */,
 				1A323DA621F299F1004298C8 /* FATVController.swift in Sources */,
 				1A6A226221E66CEB00C0A64B /* RegistrarResourcesControllerHelper.swift in Sources */,
 				569C30E8206E017800C1A19D /* HomeController+Handlers.swift in Sources */,
 				1A323DA821F29A5F004298C8 /* FATVControllerSetup.swift in Sources */,
-				5685CE1620A3F86700E4FCD1 /* RegisterController+Handlers.swift in Sources */,
-				5685CDFA20A2C1A300E4FCD1 /* LoginController.swift in Sources */,
 				56AE581E208EFB93002F3C51 /* CalendarAddController+SetupUI.swift in Sources */,
 				1A17767F217E54A000483467 /* HomeHeaderCell2.swift in Sources */,
 				56B5D4EC2059DADB00381FF6 /* AppDelegate.swift in Sources */,
+				CEAD42E023E3630900AE815B /* VideosController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +451,14 @@
 				56B5D4F02059DADB00381FF6 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEC3C0FA23BDB28100D6DD3F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC3C0FB23BDB28100D6DD3F /* Base */,
+			);
+			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -648,9 +580,10 @@
 			baseConfigurationReference = 8A6DEB31DF327959B1C80A1C /* Pods-FAARM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_ENTITLEMENTS = FAARM/FAARM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = W8BB6W47ZR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -659,9 +592,10 @@
 				INFOPLIST_FILE = FAARM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SFC.SFCMobileApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -671,9 +605,10 @@
 			baseConfigurationReference = EB334C5E643119E0D84AC147 /* Pods-FAARM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_ENTITLEMENTS = FAARM/FAARM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = W8BB6W47ZR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -682,9 +617,10 @@
 				INFOPLIST_FILE = FAARM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SFC.SFCMobileApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

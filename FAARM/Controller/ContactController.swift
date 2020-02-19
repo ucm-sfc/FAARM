@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MessageUI
+import SafariServices
 
 class ContactController: UIViewController {
     
@@ -106,23 +108,58 @@ class ContactController: UIViewController {
      * This function handles the contact form for the SFC
      */
     @objc func handleEmail() {
-        dismiss(animated: true) {
-            self.homeController?.handleMessageForm()
+        
+        guard MFMailComposeViewController.canSendMail() else {
+            let successAlertController = UIAlertController(title: "Install Mail App", message: "Please make sure that the mail app is installed to send an email to the Students First Center.", preferredStyle: .alert)
+            successAlertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (alert) in }))
+            self.present(successAlertController, animated: true, completion: nil)
+            return
         }
+        
+        let composer = MFMailComposeViewController()
+        composer.mailComposeDelegate = self as MFMailComposeViewControllerDelegate
+        composer.setToRecipients(["studentsfirst@ucmerced.edu"])
+        
+        self.present(composer, animated: true)
+        
     }
     
     //URL handlers derived from ContactControllerHelpers.swift
     @objc func handleFacebook(){
-        SocialNetwork.Facebook.openPage()
+        if SocialNetwork.Facebook.openPage() {}
+        else{
+            let pageUrl = SocialNetwork.Facebook.openPageWithinApp()
+            
+            let svc = SFSafariViewController(url: pageUrl as URL)
+            self.present(svc, animated: true, completion: nil)
+        }
     }
     @objc func handleTwitter(){
-        SocialNetwork.Twitter.openPage()
+        if SocialNetwork.Twitter.openPage() {}
+        else{
+            let pageUrl = SocialNetwork.Twitter.openPageWithinApp()
+            
+            let svc = SFSafariViewController(url: pageUrl as URL)
+            self.present(svc, animated: true, completion: nil)
+        }
     }
     @objc func handleInstagram(){
-        SocialNetwork.Instagram.openPage()
+        if SocialNetwork.Instagram.openPage() {}
+        else{
+            let pageUrl = SocialNetwork.Instagram.openPageWithinApp()
+            
+            let svc = SFSafariViewController(url: pageUrl as URL)
+            self.present(svc, animated: true, completion: nil)
+        }
     }
     @objc func handleSnapchat(){
-        SocialNetwork.Snapchat.openPage()
+        if SocialNetwork.Snapchat.openPage() {}
+        else{
+            let pageUrl = SocialNetwork.Snapchat.openPageWithinApp()
+            
+            let svc = SFSafariViewController(url: pageUrl as URL)
+            self.present(svc, animated: true, completion: nil)
+        }
     }
     
     @objc func handleDismiss(){

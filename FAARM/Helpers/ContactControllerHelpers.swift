@@ -45,15 +45,26 @@ extension ContactController {
         let page: String
         
         //definiton of loading social media profile
-        func openPage() {
+        func openPage() -> Bool {
             let schemeUrl = NSURL(string: scheme)!
-            let pageUrl = NSURL(string: page)!
-            if UIApplication.shared.canOpenURL(schemeUrl as URL) {
-                UIApplication.shared.open(schemeUrl as URL, options: [:], completionHandler: nil)
+            
+            if UIApplication.shared.canOpenURL(schemeUrl as URL) || scheme == "snapchat://add/rufusbobcat" {
+                
+                var check = false
+                
+                UIApplication.shared.open(schemeUrl as URL, options: [:], completionHandler: { (result) in check = result })
+                
+                return check
             } else {
-                UIApplication.shared.open(pageUrl as URL, options: [:], completionHandler: nil)
+                return false
             }
         }
+        
+        func openPageWithinApp() -> NSURL{
+            let pageUrl = NSURL(string: page)!
+            return pageUrl
+        }
+        
     }
     
     //creates cases to load specific social media profile & declares a function to load social media profile
@@ -66,13 +77,16 @@ extension ContactController {
             case .Twitter:
                 return SocialNetworkUrl(scheme: "twitter:///user?screen_name=rufusbobcat", page: "https://twitter.com/rufusbobcat")
             case .Snapchat:
-                return SocialNetworkUrl(scheme: "https://www.snapchat.com/add/rufusbobcat", page: "https://www.snapchat.com/add/rufusbobcat")
+                return SocialNetworkUrl(scheme: "snapchat://add/rufusbobcat", page: "https://www.snapchat.com/add/rufusbobcat")
             case .Instagram:
                 return SocialNetworkUrl(scheme: "instagram://user?username=rufusbobcat", page:"https://www.instagram.com/rufusbobcat")
             }
         }
-        func openPage() {
+        func openPage() -> Bool {
             self.url().openPage()
+        }
+        func openPageWithinApp() -> NSURL {
+            self.url().openPageWithinApp()
         }
     }
 }

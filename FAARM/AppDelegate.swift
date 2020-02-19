@@ -48,14 +48,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        UIApplication.shared.statusBarStyle = .lightContent
-        
         let layout = UICollectionViewFlowLayout()
         window?.rootViewController = HomeController(collectionViewLayout: layout)
         
         Messaging.messaging().delegate = self
-        
-        application.statusBarStyle = .lightContent
         
         return true
     }
@@ -80,6 +76,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         print("APNs token retrieved: \(deviceToken)")
         
+        InstanceID.instanceID().instanceID { (result, error) in
+          if let error = error {
+            print("Error fetching remote instance ID: \(error)")
+          } else {
+            //print("Remote instance ID token: \(result.token)")
+          }
+        }
+        
         // With swizzling disabled you must set the APNs token here.
         // Messaging.messaging().apnsToken = deviceToken
     }
@@ -92,8 +96,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         connectToFirebase()
     }
     
-    func messaging(_ messaging: Messaging, didRefreshRegistrationToken fcmToken: String) {
-        let newToken = InstanceID.instanceID().token()
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
         connectToFirebase()
     }
 

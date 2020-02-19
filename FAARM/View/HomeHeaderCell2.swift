@@ -54,6 +54,10 @@ class HomeHeaderCell: UICollectionViewCell {
         homeController?.handleCheckIn()
     }
     
+    @objc func handleMeetStaff() {
+        homeController?.handleMeetStaff()
+    }
+    
     /* setupHeader:
      * This function will add everything we declared above this and anchor to the scene
      * The components are declared in order from top to bottom so that everything can
@@ -61,9 +65,10 @@ class HomeHeaderCell: UICollectionViewCell {
      */
     func setupHeader() {
         
-        // Add Custom navigation bar and anchor it to this UIView
+        // Add Custom navigation bar and anchor it to this UIView, and adds meet the staff link
         addSubview(customNavigationBar)
         customNavigationBar.anchorNavBar(view: self)
+        customNavigationBar.logoImageView.addTarget(self, action: #selector(handleMeetStaff), for: .touchUpInside)
         
         // Add and anchor the announcements label
         addSubview(announcementsImageView)
@@ -78,8 +83,10 @@ class HomeHeaderCell: UICollectionViewCell {
         addSubview(sfcImageView)
         imageSlider.anchor(top: announcementsImageView.bottomAnchor, paddingTop: 0, left: leftAnchor, paddingLeft: 0, bottom: sfcImageView.topAnchor, paddingBotton: 0, right: rightAnchor, paddingRight: 0, width: 0, height: 0)
         
-        // Add and anchor the SFC label
+        /* opens a new page when image slider is tapped */
+        //imageSlider.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleCheckIn)))
         
+        // Add and anchor the SFC label
         sfcImageView.anchor(top: announcementsImageView.bottomAnchor, paddingTop: frame.height * 0.4, left: leftAnchor, paddingLeft: 0, bottom: nil, paddingBotton: 0, right: rightAnchor, paddingRight: 0, width: 0, height: frame.height * 0.055)
         
         // Add/anchor the check in button and the bottom label for the student services

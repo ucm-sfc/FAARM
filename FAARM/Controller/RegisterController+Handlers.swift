@@ -24,7 +24,7 @@ extension RegisterController {
                 // add a UI alert action later
             }
             
-            guard let uid = user?.uid else { return }
+            guard let uid = user?.user else { return }
             let dictionaryValues = ["username": username, "usertype": usertype]
             let values = [uid: dictionaryValues]
             

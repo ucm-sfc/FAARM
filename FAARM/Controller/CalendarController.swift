@@ -62,9 +62,7 @@ class CalendarController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if(CheckInternet.Connection()){
-            fetchCalendarEvents()
-        }
+        fetchCalendarEvents()
         
         setupUI()
     }

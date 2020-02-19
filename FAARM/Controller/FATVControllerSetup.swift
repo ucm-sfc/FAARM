@@ -13,7 +13,9 @@ extension FATVController {
     func setupUI() {
 
         let customNavigationBar = CustomNavigationView()
-        customNavigationBar.logoImageView.image = #imageLiteral(resourceName: "FATVTitle")
+        customNavigationBar.logoImageView.setImage(#imageLiteral(resourceName: "FATVTitle"), for: .normal)
+        customNavigationBar.logoImageView.adjustsImageWhenDisabled = false
+        customNavigationBar.logoImageView.isEnabled = false
         collectionView.addSubview(customNavigationBar)
         customNavigationBar.anchorMiniNavBar(view: view)
 

@@ -17,13 +17,11 @@ extension CalendarAddController {
         if (CheckInternet.Connection()) {
             let prefs = UserDefaults.standard
             var eventsArray = prefs.object(forKey: "subbedEvents") as? [String] ?? [String]()
-           
-            let string = descriptionTextView.text.uppercased().filter("ABCDEFGHIJKLKMNOPQRSTUVWXYZ1234567890 ".contains).replacingOccurrences(of: " ", with: "_", options: .literal, range: nil)
+            
+            Messaging.messaging().subscribe(toTopic: id!)
+            print("User is now subbed to: " + id!)
                 
-            Messaging.messaging().subscribe(toTopic: string)
-            print("User is now subbed to: " + string)
-                
-            eventsArray.append(string)
+            eventsArray.append(id!)
             prefs.set(eventsArray, forKey: "subbedEvents")
             
             
@@ -52,16 +50,14 @@ extension CalendarAddController {
 
         if(CheckInternet.Connection()) {
             
-            let string = descriptionTextView.text.uppercased().filter("ABCDEFGHIJKLKMNOPQRSTUVWXYZ1234567890 ".contains).replacingOccurrences(of: " ", with: "_", options: .literal, range: nil)
-            
-            Messaging.messaging().unsubscribe(fromTopic: string)
-            print("User is now unsubbed from: " + string)
+            Messaging.messaging().unsubscribe(fromTopic: id!)
+            print("User is now unsubbed from: " + id!)
             
             let prefs = UserDefaults.standard
             var eventsArray = prefs.object(forKey: "subbedEvents") as? [String] ?? [String]()
             
             for i in 0 ..< eventsArray.count{
-                if (eventsArray[i] == string){
+                if (eventsArray[i] == id!){
                     eventsArray.remove(at: i)
                     break
                 }

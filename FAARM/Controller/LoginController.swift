@@ -92,7 +92,7 @@ class LoginController: UIViewController {
                 print("Failed to sign in: ", error)
                 return
             }
-            print("Successfully logged in: ", user?.uid ?? "")
+            print("Successfully logged in: ", user?.user ?? "")
             self.dismiss(animated: true, completion: nil)
         }
     }

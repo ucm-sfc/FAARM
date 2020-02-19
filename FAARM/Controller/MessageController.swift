@@ -50,7 +50,6 @@ class MessageController: UICollectionViewController, UICollectionViewDelegateFlo
 //        }
         sendEmail()
         
-        
     }
     
     func sendEmail() {

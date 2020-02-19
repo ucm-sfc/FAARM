@@ -24,7 +24,7 @@ extension CalendarController {
         var eventsArray = prefs.object(forKey: "subbedEvents") as? [String] ?? [String]()
         
         // Create an active URL session using our known URL String
-        guard let url = URL(string: calendarUrl) else { return }
+        guard let url = URL(string: calendarUrl) else{ return }
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             
             // Check for an errpr
@@ -38,7 +38,7 @@ extension CalendarController {
             * Then for each item, we create a dictionary where we get the values
             * for our calendar entries
             */
-            if let json = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary {
+            if let json = ((try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary) as NSDictionary??) {
                 
                 // Grab the items array
                 if let itemsArray = json?.object(forKey: "items") as? NSArray {
@@ -53,10 +53,10 @@ extension CalendarController {
                             
                             let name = itemDict.value(forKey: "summary") as? String
                             
-                            let string = name!.uppercased().filter("ABCDEFGHIJKLKMNOPQRSTUVWXYZ1234567890 ".contains).replacingOccurrences(of: " ", with: "_", options: .literal, range: nil)
+                            let id = itemDict.value(forKey: "id") as? String
                             
                             if (!eventsArray.isEmpty) {
-                                eventsArray = eventsArray.filter{$0 != string}
+                                eventsArray = eventsArray.filter{$0 != id}
                             }
                             
                             let description = itemDict.value(forKey: "description") as? String
@@ -65,6 +65,7 @@ extension CalendarController {
                             // to the parsed data we get from our JSON
                             calendarEvent.name = name
                             calendarEvent.description = description
+                            calendarEvent.id = id
                             
                             // This allows us to get the date of the event
                             if let startDict = itemDict.value(forKey: "start") as? NSDictionary{
